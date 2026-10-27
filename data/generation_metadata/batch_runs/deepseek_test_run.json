@@ -1,0 +1,20 @@
+{
+  "run_id": "deepseek-test-20261015T000452Z",
+  "provider": "deepseek",
+  "model_requested": "deepseek-chat",
+  "temperature": 0.2,
+  "max_tokens": 2048,
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "total_provider_tasks": 2124,
+  "pending_at_start": 4,
+  "request_interval_seconds": 2.0,
+  "started_at_utc": "2026-10-15T00:04:52.736035+00:00",
+  "status": "completed",
+  "completed": 4,
+  "failed": 0,
+  "last_error": "",
+  "source_id": "china-law-2019-00038",
+  "evaluation_role": "pilot_only",
+  "last_flush_at_utc": "2026-10-15T00:05:04.194607+00:00",
+  "finished_at_utc": "2026-10-15T00:05:04.194607+00:00"
+}

@@ -1,0 +1,256 @@
+{
+  "benchmark_root": "E:\\xhy-codex\\AI-detect\\research_benchmark_legal_edit_v3",
+  "benchmark_version": "3.0",
+  "provenance": {
+    "error_count": 0,
+    "source_count": 493,
+    "benchmark_count": 8381,
+    "benchmark_h_count": 493,
+    "benchmark_e_count": 7888,
+    "benchmark_by_split_and_type": {
+      "calibration:E": 1328,
+      "calibration:H": 83,
+      "dev:E": 1296,
+      "dev:H": 81,
+      "test:E": 1376,
+      "test:H": 86,
+      "train:E": 3888,
+      "train:H": 243
+    },
+    "raw_responses_rechecked": 7888,
+    "refusal_output_count": 0,
+    "analysis_marker_count": 0,
+    "accepted_h_without_terminal_punctuation_count": 33,
+    "accepted_h_without_terminal_punctuation_ids": [
+      "china-law-2000-00022",
+      "china-law-2000-00024",
+      "china-law-2000-00038",
+      "china-law-2000-00087",
+      "china-law-2000-00091",
+      "china-law-2000-00094",
+      "china-law-2000-00097",
+      "china-law-2000-00099",
+      "china-law-2001-00081",
+      "china-law-2001-00083",
+      "china-law-2001-00091",
+      "china-law-2001-00099",
+      "china-law-2002-00009",
+      "china-law-2002-00012",
+      "china-law-2003-00006",
+      "china-law-2003-00011",
+      "china-law-2003-00017",
+      "china-law-2003-00018",
+      "china-law-2003-00019",
+      "china-law-2003-00031",
+      "china-law-2003-00032",
+      "china-law-2003-00050",
+      "china-law-2003-00051",
+      "china-law-2003-00053",
+      "china-law-2003-00057",
+      "china-law-2003-00079",
+      "china-law-2003-00080",
+      "china-law-2003-00085",
+      "china-law-2003-00092",
+      "china-law-2003-00095",
+      "china-law-2003-00096",
+      "china-law-2003-00100",
+      "china-law-2003-00107"
+    ],
+    "review_flags_by_code": {
+      "duplicate_output_across_levels": 14,
+      "edit_distance_nonmonotonic": 1265,
+      "large_edit_distance": 5,
+      "length_ratio_outside_0.5_2.0": 2,
+      "numeric_content_changed": 336,
+      "unchanged_text": 666
+    },
+    "selection": {
+      "reviewed_csv_sha256": "ce5742be3928d0fe03e6eb4c2db3a1bb7fe9bf98ebbd959ecf8e226380aa4e09",
+      "csv_formal_source_count": 500,
+      "csv_pilot_source_count": 1,
+      "csv_removed_v2_sources": [
+        "china-law-2004-00042",
+        "china-law-2004-00138",
+        "china-law-2011-00036",
+        "china-law-2012-00094",
+        "china-law-2013-00002",
+        "china-law-2014-00002",
+        "china-law-2014-00082",
+        "china-law-2017-00025"
+      ],
+      "manual_truncation_exclusions": [
+        "china-law-2004-00043",
+        "china-law-2004-00047",
+        "china-law-2004-00094",
+        "china-law-2004-00115",
+        "china-law-2005-00093",
+        "china-law-2005-00094",
+        "china-law-2008-00017"
+      ],
+      "csv_text_overrides_ignored": 75
+    },
+    "parent_v2_benchmark_sha256": "25d66e46d7547824c4d4309aeb865500c9f1c46ab9d97505135aadf6f1b5ba33",
+    "v1_processed_jsonl_sha256": "e3e0e2b474041fdbaaed457d3d5f078f349ba6d65073cb6efb49f2f41d851c02",
+    "quality_scope": "Source-group decisions, hashes and raw-response lineage; legal meaning not certified."
+  },
+  "row_count": 8381,
+  "source_group_count": 493,
+  "group_shape_counts": {
+    "(17, 1, 16)": 493
+  },
+  "split_group_counts": {
+    "train": 243,
+    "test": 86,
+    "calibration": 83,
+    "dev": 81
+  },
+  "split_overlap_counts": {
+    "train": {},
+    "test": {
+      "train": 0
+    },
+    "calibration": {
+      "train": 0,
+      "test": 0,
+      "dev": 0
+    },
+    "dev": {
+      "train": 0,
+      "test": 0
+    }
+  },
+  "provider_level_counts": {
+    "deepseek:E1": 493,
+    "deepseek:E2": 493,
+    "deepseek:E3": 493,
+    "deepseek:E4": 493,
+    "doubao:E1": 493,
+    "doubao:E2": 493,
+    "doubao:E3": 493,
+    "doubao:E4": 493,
+    "kimi:E1": 493,
+    "kimi:E2": 493,
+    "kimi:E3": 493,
+    "kimi:E4": 493,
+    "wenxin:E1": 493,
+    "wenxin:E2": 493,
+    "wenxin:E3": 493,
+    "wenxin:E4": 493
+  },
+  "source_group_isolation": {
+    "pooled": {
+      "train_groups": 243,
+      "calibration_groups": 83,
+      "test_groups_from_predictions": 86,
+      "train_calibration_overlap": 0,
+      "train_test_overlap": 0,
+      "calibration_test_overlap": 0,
+      "saved_test_prediction_rows": 1462,
+      "source_group_isolation_pass": true
+    },
+    "leave_out_deepseek": {
+      "train_groups": 243,
+      "calibration_groups": 83,
+      "test_groups_from_predictions": 86,
+      "train_calibration_overlap": 0,
+      "train_test_overlap": 0,
+      "calibration_test_overlap": 0,
+      "saved_test_prediction_rows": 430,
+      "source_group_isolation_pass": true
+    },
+    "leave_out_doubao": {
+      "train_groups": 243,
+      "calibration_groups": 83,
+      "test_groups_from_predictions": 86,
+      "train_calibration_overlap": 0,
+      "train_test_overlap": 0,
+      "calibration_test_overlap": 0,
+      "saved_test_prediction_rows": 430,
+      "source_group_isolation_pass": true
+    },
+    "leave_out_kimi": {
+      "train_groups": 243,
+      "calibration_groups": 83,
+      "test_groups_from_predictions": 86,
+      "train_calibration_overlap": 0,
+      "train_test_overlap": 0,
+      "calibration_test_overlap": 0,
+      "saved_test_prediction_rows": 430,
+      "source_group_isolation_pass": true
+    },
+    "leave_out_wenxin": {
+      "train_groups": 243,
+      "calibration_groups": 83,
+      "test_groups_from_predictions": 86,
+      "train_calibration_overlap": 0,
+      "train_test_overlap": 0,
+      "calibration_test_overlap": 0,
+      "saved_test_prediction_rows": 430,
+      "source_group_isolation_pass": true
+    }
+  },
+  "all_saved_source_group_isolation_pass": true,
+  "baseline_pooled": {
+    "test_h": 86,
+    "test_e": 1376,
+    "calibration_fpr": 0.04819277108433735,
+    "test_fpr": 0.16279069767441862,
+    "threshold": 0.6231196992992545,
+    "model": "TF-IDF character 2-4 grams + balanced logistic regression"
+  },
+  "baseline_title_abstract": {
+    "calibration_fpr": 0.04819277108433735,
+    "test_fpr": 0.13953488372093023,
+    "threshold": 0.6065824560737364
+  },
+  "conservative_empirical_1pct_fpr": {
+    "E1": {
+      "tpr": 0.0,
+      "fpr": 0.0,
+      "definition": "conservative empirical threshold; no interpolation"
+    },
+    "E2": {
+      "tpr": 0.09302325581395349,
+      "fpr": 0.0,
+      "definition": "conservative empirical threshold; no interpolation"
+    },
+    "E3": {
+      "tpr": 0.061046511627906974,
+      "fpr": 0.0,
+      "definition": "conservative empirical threshold; no interpolation"
+    },
+    "E4": {
+      "tpr": 0.09011627906976744,
+      "fpr": 0.0,
+      "definition": "conservative empirical threshold; no interpolation"
+    },
+    "all_E": {
+      "tpr": 0.061046511627906974,
+      "fpr": 0.0,
+      "definition": "conservative empirical threshold; no interpolation"
+    }
+  },
+  "manuscript_interpolated_1pct_roc_fpr": {
+    "E1": 0.010,
+    "E2": 0.096,
+    "E3": 0.061,
+    "E4": 0.090,
+    "definition": "linear interpolation on the saved pooled test ROC curve; ranking summary, not a deployment threshold"
+  },
+  "unresolved_or_absent_artifacts": {
+    "pal_cp_code_or_predictions": true,
+    "cross_model_4x4_matrix_file": true,
+    "stylometric_fused_ablation_in_v3": true,
+    "public_repository_url": true
+  },
+  "data_and_code_files": {
+    "run_claw_edit_baseline.py": "1b4d2a32d3024b23409e28a9bfcd24450c986e6f4952c273cd02503010b9848b",
+    "analyze_claw_edit_levels.py": "ff073cd95f7b10448fb70f73b94a3cb01aa95dcdcd8f02fb8067b0a411a7788c",
+    "analyze_claw_edit_scores.py": "078dd4de393f2b52f7d89613e7103605d518a9fd87e9f85fa4241d1efa3693e5",
+    "research_benchmark_legal_edit_v3\\README.md": "cbdcf5d18b01e2b10776cb2d82c203a6b181c4d84377ed9d8d00ce3656b870f1",
+    "research_benchmark_legal_edit_v3\\manifest.json": "c7120f8efbd3c1d74a2fc9dd0a6cc096d8b07d96b9761bf70a8e4207d1b38f83",
+    "research_benchmark_legal_edit_v3\\evaluation\\provenance_audit.json": "47ae512e98af28cf7253baea34ea21c6df7a3a65c4921585a17b8d0e6bdbf6e0",
+    "research_benchmark_legal_edit_v3\\evaluation\\char_ngram_baseline.json": "3d842d715e2b1c877f6450c68b59d167932f4c7c3d7b0a4dee16810a4d9ac0c9",
+    "research_benchmark_legal_edit_v3\\evaluation\\char_ngram_baseline_title_abstract.json": "242ab00eaf10090d6cb3c8ee257d2233eacb27991cbb1d3d3555881cbd540d02"
+  }
+}

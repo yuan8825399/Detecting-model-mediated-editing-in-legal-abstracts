@@ -1,0 +1,19 @@
+{
+  "run_id": "kimi-test-20261013T123939Z",
+  "provider": "kimi",
+  "model_requested": "kimi-k2.6",
+  "temperature": 1,
+  "endpoint": "https://api.moonshot.cn/v1/chat/completions",
+  "total_provider_tasks": 2124,
+  "pending_at_start": 4,
+  "workers": 1,
+  "started_at_utc": "2026-10-13T12:39:39.411637+00:00",
+  "status": "completed",
+  "completed": 4,
+  "failed": 0,
+  "failures": [],
+  "source_id": "china-law-2019-00038",
+  "evaluation_role": "pilot_only",
+  "last_flush_at_utc": "2026-10-13T12:42:41.791500+00:00",
+  "finished_at_utc": "2026-10-13T12:42:41.849589+00:00"
+}

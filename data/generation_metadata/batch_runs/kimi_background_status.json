@@ -1,0 +1,14 @@
+{
+  "status": "completed",
+  "log_path": "E:\\xhy-codex\\AI-detect\\research_benchmark_legal_edit_v1\\evaluation\\kimi_background.log",
+  "updated_at_utc": "2026-10-14T14:12:18.181861+00:00",
+  "pid": 12092,
+  "started_at_utc": "2026-10-14T12:18:24.686003+00:00",
+  "collection_attempt": 1,
+  "reason": "",
+  "accepted": 2124,
+  "expected": 2124,
+  "processing_exit_code": 0,
+  "validation_exit_code": 0,
+  "finished_at_utc": "2026-10-14T14:12:18.181861+00:00"
+}

@@ -1,0 +1,1322 @@
+{
+  "benchmark_version": "3.0",
+  "label": {
+    "levels": {
+      "H": 0,
+      "E1": 1,
+      "E2": 2,
+      "E3": 3,
+      "E4": 4
+    },
+    "z_mapping": {
+      "H": 0.0,
+      "E1": 0.25,
+      "E2": 0.5,
+      "E3": 0.75,
+      "E4": 1.0
+    },
+    "interpretation": "Pre-specified edit-operation labels, not LLM authorship or generated-text proportions."
+  },
+  "bootstrap_replicates": 1000,
+  "bootstrap_unit": "source_id",
+  "fixed_split": {
+    "abstract": {
+      "model": "Cumulative ordinal logistic regression over character 2-4-gram TF-IDF; independently isotonic-calibrated threshold probabilities are monotonized before five-class reconstruction.",
+      "input": "abstract",
+      "source_groups_by_split": {
+        "train": 243,
+        "dev": 81,
+        "calibration": 83,
+        "test": 86
+      },
+      "records_by_split": {
+        "train": 4131,
+        "dev": 1377,
+        "calibration": 1411,
+        "test": 1462
+      },
+      "selected_c": 10.0,
+      "dev_by_c_raw": {
+        "0.1": {
+          "n": 1377,
+          "exact_accuracy": 0.267248,
+          "macro_f1": 0.147756,
+          "quadratic_weighted_kappa": 0.350216,
+          "mae_levels": 1.347858,
+          "within_one_level": 0.588235,
+          "expected_z_mae": 0.258466,
+          "expected_z_rmse": 0.305959,
+          "expected_z_spearman": 0.542035
+        },
+        "1.0": {
+          "n": 1377,
+          "exact_accuracy": 0.267974,
+          "macro_f1": 0.149279,
+          "quadratic_weighted_kappa": 0.360595,
+          "mae_levels": 1.337691,
+          "within_one_level": 0.592593,
+          "expected_z_mae": 0.231657,
+          "expected_z_rmse": 0.264177,
+          "expected_z_spearman": 0.557799
+        },
+        "10.0": {
+          "n": 1377,
+          "exact_accuracy": 0.330428,
+          "macro_f1": 0.285756,
+          "quadratic_weighted_kappa": 0.360233,
+          "mae_levels": 1.153958,
+          "within_one_level": 0.635439,
+          "expected_z_mae": 0.223674,
+          "expected_z_rmse": 0.268845,
+          "expected_z_spearman": 0.562968
+        }
+      },
+      "calibration_raw": {
+        "n": 1411,
+        "exact_accuracy": 0.360028,
+        "macro_f1": 0.311775,
+        "quadratic_weighted_kappa": 0.411213,
+        "mae_levels": 1.08292,
+        "within_one_level": 0.675408,
+        "expected_z_mae": 0.215337,
+        "expected_z_rmse": 0.257987,
+        "expected_z_spearman": 0.612479
+      },
+      "calibration_isotonic": {
+        "n": 1411,
+        "exact_accuracy": 0.350815,
+        "macro_f1": 0.309318,
+        "quadratic_weighted_kappa": 0.544212,
+        "mae_levels": 1.068037,
+        "within_one_level": 0.7073,
+        "expected_z_mae": 0.20108,
+        "expected_z_rmse": 0.25285,
+        "expected_z_spearman": 0.644569
+      },
+      "test_raw": {
+        "n": 1462,
+        "exact_accuracy": 0.345417,
+        "macro_f1": 0.296062,
+        "quadratic_weighted_kappa": 0.378586,
+        "mae_levels": 1.136115,
+        "within_one_level": 0.660739,
+        "expected_z_mae": 0.222546,
+        "expected_z_rmse": 0.269971,
+        "expected_z_spearman": 0.557344
+      },
+      "test_isotonic_calibrated": {
+        "n": 1462,
+        "exact_accuracy": 0.307798,
+        "macro_f1": 0.260835,
+        "quadratic_weighted_kappa": 0.472569,
+        "mae_levels": 1.199042,
+        "within_one_level": 0.662791,
+        "expected_z_mae": 0.222357,
+        "expected_z_rmse": 0.280352,
+        "expected_z_spearman": 0.566467
+      },
+      "test_by_level_isotonic_calibrated": {
+        "L0": {
+          "n": 86,
+          "recall": 0.895349,
+          "mean_expected_z": 0.199141,
+          "mean_prediction": 0.302326
+        },
+        "L1": {
+          "n": 344,
+          "recall": 0.049419,
+          "mean_expected_z": 0.243456,
+          "mean_prediction": 0.491279
+        },
+        "L2": {
+          "n": 344,
+          "recall": 0.206395,
+          "mean_expected_z": 0.624257,
+          "mean_prediction": 2.648256
+        },
+        "L3": {
+          "n": 344,
+          "recall": 0.113372,
+          "mean_expected_z": 0.601296,
+          "mean_prediction": 2.43314
+        },
+        "L4": {
+          "n": 344,
+          "recall": 0.715116,
+          "mean_expected_z": 0.692089,
+          "mean_prediction": 3.156977
+        }
+      },
+      "source_bootstrap_95ci": {
+        "exact_accuracy_95ci": [
+          0.285226,
+          0.331053
+        ],
+        "expected_z_mae_95ci": [
+          0.209896,
+          0.234338
+        ],
+        "expected_z_rmse_95ci": [
+          0.263854,
+          0.296677
+        ],
+        "expected_z_spearman_95ci": [
+          0.523864,
+          0.610846
+        ],
+        "macro_f1_95ci": [
+          0.234669,
+          0.286837
+        ],
+        "mae_levels_95ci": [
+          1.123786,
+          1.274966
+        ],
+        "quadratic_weighted_kappa_95ci": [
+          0.428596,
+          0.522149
+        ],
+        "within_one_level_95ci": [
+          0.636115,
+          0.689483
+        ]
+      }
+    },
+    "title_abstract": {
+      "model": "Cumulative ordinal logistic regression over character 2-4-gram TF-IDF; independently isotonic-calibrated threshold probabilities are monotonized before five-class reconstruction.",
+      "input": "title_abstract",
+      "source_groups_by_split": {
+        "train": 243,
+        "dev": 81,
+        "calibration": 83,
+        "test": 86
+      },
+      "records_by_split": {
+        "train": 4131,
+        "dev": 1377,
+        "calibration": 1411,
+        "test": 1462
+      },
+      "selected_c": 10.0,
+      "dev_by_c_raw": {
+        "0.1": {
+          "n": 1377,
+          "exact_accuracy": 0.265795,
+          "macro_f1": 0.147558,
+          "quadratic_weighted_kappa": 0.344199,
+          "mae_levels": 1.356572,
+          "within_one_level": 0.58533,
+          "expected_z_mae": 0.258919,
+          "expected_z_rmse": 0.307149,
+          "expected_z_spearman": 0.537475
+        },
+        "1.0": {
+          "n": 1377,
+          "exact_accuracy": 0.2687,
+          "macro_f1": 0.149611,
+          "quadratic_weighted_kappa": 0.373107,
+          "mae_levels": 1.327524,
+          "within_one_level": 0.59695,
+          "expected_z_mae": 0.232466,
+          "expected_z_rmse": 0.265129,
+          "expected_z_spearman": 0.552072
+        },
+        "10.0": {
+          "n": 1377,
+          "exact_accuracy": 0.331881,
+          "macro_f1": 0.283187,
+          "quadratic_weighted_kappa": 0.379343,
+          "mae_levels": 1.146696,
+          "within_one_level": 0.641975,
+          "expected_z_mae": 0.221717,
+          "expected_z_rmse": 0.26609,
+          "expected_z_spearman": 0.566965
+        }
+      },
+      "calibration_raw": {
+        "n": 1411,
+        "exact_accuracy": 0.356485,
+        "macro_f1": 0.302924,
+        "quadratic_weighted_kappa": 0.433,
+        "mae_levels": 1.077959,
+        "within_one_level": 0.683912,
+        "expected_z_mae": 0.213276,
+        "expected_z_rmse": 0.255568,
+        "expected_z_spearman": 0.613756
+      },
+      "calibration_isotonic": {
+        "n": 1411,
+        "exact_accuracy": 0.343728,
+        "macro_f1": 0.299987,
+        "quadratic_weighted_kappa": 0.553678,
+        "mae_levels": 1.06095,
+        "within_one_level": 0.710135,
+        "expected_z_mae": 0.20114,
+        "expected_z_rmse": 0.252594,
+        "expected_z_spearman": 0.64363
+      },
+      "test_raw": {
+        "n": 1462,
+        "exact_accuracy": 0.344049,
+        "macro_f1": 0.293012,
+        "quadratic_weighted_kappa": 0.378461,
+        "mae_levels": 1.142271,
+        "within_one_level": 0.658003,
+        "expected_z_mae": 0.221403,
+        "expected_z_rmse": 0.268368,
+        "expected_z_spearman": 0.558478
+      },
+      "test_isotonic_calibrated": {
+        "n": 1462,
+        "exact_accuracy": 0.312585,
+        "macro_f1": 0.267053,
+        "quadratic_weighted_kappa": 0.482906,
+        "mae_levels": 1.178523,
+        "within_one_level": 0.669631,
+        "expected_z_mae": 0.220649,
+        "expected_z_rmse": 0.278943,
+        "expected_z_spearman": 0.563395
+      },
+      "test_by_level_isotonic_calibrated": {
+        "L0": {
+          "n": 86,
+          "recall": 0.883721,
+          "mean_expected_z": 0.20038,
+          "mean_prediction": 0.337209
+        },
+        "L1": {
+          "n": 344,
+          "recall": 0.063953,
+          "mean_expected_z": 0.245707,
+          "mean_prediction": 0.552326
+        },
+        "L2": {
+          "n": 344,
+          "recall": 0.174419,
+          "mean_expected_z": 0.630957,
+          "mean_prediction": 2.709302
+        },
+        "L3": {
+          "n": 344,
+          "recall": 0.139535,
+          "mean_expected_z": 0.608039,
+          "mean_prediction": 2.59593
+        },
+        "L4": {
+          "n": 344,
+          "recall": 0.729651,
+          "mean_expected_z": 0.695238,
+          "mean_prediction": 3.206395
+        }
+      },
+      "source_bootstrap_95ci": {
+        "exact_accuracy_95ci": [
+          0.289313,
+          0.335858
+        ],
+        "expected_z_mae_95ci": [
+          0.207997,
+          0.232717
+        ],
+        "expected_z_rmse_95ci": [
+          0.262017,
+          0.295746
+        ],
+        "expected_z_spearman_95ci": [
+          0.522062,
+          0.607356
+        ],
+        "macro_f1_95ci": [
+          0.238466,
+          0.292752
+        ],
+        "mae_levels_95ci": [
+          1.095759,
+          1.261303
+        ],
+        "quadratic_weighted_kappa_95ci": [
+          0.428624,
+          0.534744
+        ],
+        "within_one_level_95ci": [
+          0.64157,
+          0.697674
+        ]
+      }
+    }
+  },
+  "cross_provider": {
+    "deepseek": {
+      "model": "Cumulative ordinal logistic regression over character 2-4-gram TF-IDF; independently isotonic-calibrated threshold probabilities are monotonized before five-class reconstruction.",
+      "input": "abstract",
+      "source_groups_by_split": {
+        "train": 243,
+        "dev": 81,
+        "calibration": 83,
+        "test": 86
+      },
+      "records_by_split": {
+        "train": 3159,
+        "dev": 1053,
+        "calibration": 1079,
+        "test": 430
+      },
+      "selected_c": 10.0,
+      "dev_by_c_raw": {
+        "0.1": {
+          "n": 1053,
+          "exact_accuracy": 0.281102,
+          "macro_f1": 0.162684,
+          "quadratic_weighted_kappa": 0.465201,
+          "mae_levels": 1.244065,
+          "within_one_level": 0.635328,
+          "expected_z_mae": 0.262459,
+          "expected_z_rmse": 0.311114,
+          "expected_z_spearman": 0.607876
+        },
+        "1.0": {
+          "n": 1053,
+          "exact_accuracy": 0.282051,
+          "macro_f1": 0.163069,
+          "quadratic_weighted_kappa": 0.474291,
+          "mae_levels": 1.234568,
+          "within_one_level": 0.639126,
+          "expected_z_mae": 0.230256,
+          "expected_z_rmse": 0.262587,
+          "expected_z_spearman": 0.617891
+        },
+        "10.0": {
+          "n": 1053,
+          "exact_accuracy": 0.373219,
+          "macro_f1": 0.335718,
+          "quadratic_weighted_kappa": 0.502612,
+          "mae_levels": 1.020893,
+          "within_one_level": 0.693257,
+          "expected_z_mae": 0.209586,
+          "expected_z_rmse": 0.250858,
+          "expected_z_spearman": 0.634592
+        }
+      },
+      "calibration_raw": {
+        "n": 1079,
+        "exact_accuracy": 0.399444,
+        "macro_f1": 0.359592,
+        "quadratic_weighted_kappa": 0.569618,
+        "mae_levels": 0.932345,
+        "within_one_level": 0.73494,
+        "expected_z_mae": 0.196658,
+        "expected_z_rmse": 0.234507,
+        "expected_z_spearman": 0.689168
+      },
+      "calibration_isotonic": {
+        "n": 1079,
+        "exact_accuracy": 0.387396,
+        "macro_f1": 0.332326,
+        "quadratic_weighted_kappa": 0.66593,
+        "mae_levels": 0.892493,
+        "within_one_level": 0.774791,
+        "expected_z_mae": 0.18724,
+        "expected_z_rmse": 0.22671,
+        "expected_z_spearman": 0.709569
+      },
+      "test_raw": {
+        "n": 430,
+        "exact_accuracy": 0.351163,
+        "macro_f1": 0.326892,
+        "quadratic_weighted_kappa": 0.420319,
+        "mae_levels": 1.167442,
+        "within_one_level": 0.681395,
+        "expected_z_mae": 0.260109,
+        "expected_z_rmse": 0.314613,
+        "expected_z_spearman": 0.465743
+      },
+      "test_isotonic_calibrated": {
+        "n": 430,
+        "exact_accuracy": 0.295349,
+        "macro_f1": 0.233675,
+        "quadratic_weighted_kappa": 0.258509,
+        "mae_levels": 1.504651,
+        "within_one_level": 0.551163,
+        "expected_z_mae": 0.324171,
+        "expected_z_rmse": 0.40969,
+        "expected_z_spearman": 0.483751
+      },
+      "test_by_level_isotonic_calibrated": {
+        "L0": {
+          "n": 86,
+          "recall": 0.906977,
+          "mean_expected_z": 0.141118,
+          "mean_prediction": 0.290698
+        },
+        "L1": {
+          "n": 86,
+          "recall": 0.034884,
+          "mean_expected_z": 0.165868,
+          "mean_prediction": 0.313953
+        },
+        "L2": {
+          "n": 86,
+          "recall": 0.162791,
+          "mean_expected_z": 0.330577,
+          "mean_prediction": 1.104651
+        },
+        "L3": {
+          "n": 86,
+          "recall": 0.081395,
+          "mean_expected_z": 0.292508,
+          "mean_prediction": 0.872093
+        },
+        "L4": {
+          "n": 86,
+          "recall": 0.290698,
+          "mean_expected_z": 0.464712,
+          "mean_prediction": 1.755814
+        }
+      },
+      "source_bootstrap_95ci": {
+        "exact_accuracy_95ci": [
+          0.267442,
+          0.327907
+        ],
+        "expected_z_mae_95ci": [
+          0.302967,
+          0.343417
+        ],
+        "expected_z_rmse_95ci": [
+          0.384056,
+          0.430904
+        ],
+        "expected_z_spearman_95ci": [
+          0.422283,
+          0.559512
+        ],
+        "macro_f1_95ci": [
+          0.194311,
+          0.276566
+        ],
+        "mae_levels_95ci": [
+          1.383721,
+          1.618605
+        ],
+        "quadratic_weighted_kappa_95ci": [
+          0.193733,
+          0.332572
+        ],
+        "within_one_level_95ci": [
+          0.51157,
+          0.595349
+        ]
+      }
+    },
+    "doubao": {
+      "model": "Cumulative ordinal logistic regression over character 2-4-gram TF-IDF; independently isotonic-calibrated threshold probabilities are monotonized before five-class reconstruction.",
+      "input": "abstract",
+      "source_groups_by_split": {
+        "train": 243,
+        "dev": 81,
+        "calibration": 83,
+        "test": 86
+      },
+      "records_by_split": {
+        "train": 3159,
+        "dev": 1053,
+        "calibration": 1079,
+        "test": 430
+      },
+      "selected_c": 10.0,
+      "dev_by_c_raw": {
+        "0.1": {
+          "n": 1053,
+          "exact_accuracy": 0.272555,
+          "macro_f1": 0.15523,
+          "quadratic_weighted_kappa": 0.372886,
+          "mae_levels": 1.350427,
+          "within_one_level": 0.590693,
+          "expected_z_mae": 0.26436,
+          "expected_z_rmse": 0.314054,
+          "expected_z_spearman": 0.554457
+        },
+        "1.0": {
+          "n": 1053,
+          "exact_accuracy": 0.273504,
+          "macro_f1": 0.154653,
+          "quadratic_weighted_kappa": 0.388969,
+          "mae_levels": 1.335233,
+          "within_one_level": 0.597341,
+          "expected_z_mae": 0.24007,
+          "expected_z_rmse": 0.274165,
+          "expected_z_spearman": 0.568484
+        },
+        "10.0": {
+          "n": 1053,
+          "exact_accuracy": 0.334283,
+          "macro_f1": 0.281599,
+          "quadratic_weighted_kappa": 0.403505,
+          "mae_levels": 1.174739,
+          "within_one_level": 0.639126,
+          "expected_z_mae": 0.223855,
+          "expected_z_rmse": 0.268734,
+          "expected_z_spearman": 0.577765
+        }
+      },
+      "calibration_raw": {
+        "n": 1079,
+        "exact_accuracy": 0.349398,
+        "macro_f1": 0.292816,
+        "quadratic_weighted_kappa": 0.462988,
+        "mae_levels": 1.100093,
+        "within_one_level": 0.687674,
+        "expected_z_mae": 0.215214,
+        "expected_z_rmse": 0.256978,
+        "expected_z_spearman": 0.63062
+      },
+      "calibration_isotonic": {
+        "n": 1079,
+        "exact_accuracy": 0.332715,
+        "macro_f1": 0.26925,
+        "quadratic_weighted_kappa": 0.544328,
+        "mae_levels": 1.120482,
+        "within_one_level": 0.687674,
+        "expected_z_mae": 0.202446,
+        "expected_z_rmse": 0.253076,
+        "expected_z_spearman": 0.662415
+      },
+      "test_raw": {
+        "n": 430,
+        "exact_accuracy": 0.367442,
+        "macro_f1": 0.327198,
+        "quadratic_weighted_kappa": 0.417013,
+        "mae_levels": 1.211628,
+        "within_one_level": 0.64186,
+        "expected_z_mae": 0.254943,
+        "expected_z_rmse": 0.309109,
+        "expected_z_spearman": 0.585873
+      },
+      "test_isotonic_calibrated": {
+        "n": 430,
+        "exact_accuracy": 0.374419,
+        "macro_f1": 0.30394,
+        "quadratic_weighted_kappa": 0.509123,
+        "mae_levels": 1.134884,
+        "within_one_level": 0.67907,
+        "expected_z_mae": 0.221965,
+        "expected_z_rmse": 0.282303,
+        "expected_z_spearman": 0.619136
+      },
+      "test_by_level_isotonic_calibrated": {
+        "L0": {
+          "n": 86,
+          "recall": 0.883721,
+          "mean_expected_z": 0.205305,
+          "mean_prediction": 0.360465
+        },
+        "L1": {
+          "n": 86,
+          "recall": 0.046512,
+          "mean_expected_z": 0.2515,
+          "mean_prediction": 0.476744
+        },
+        "L2": {
+          "n": 86,
+          "recall": 0.244186,
+          "mean_expected_z": 0.626632,
+          "mean_prediction": 2.604651
+        },
+        "L3": {
+          "n": 86,
+          "recall": 0.093023,
+          "mean_expected_z": 0.567719,
+          "mean_prediction": 2.313953
+        },
+        "L4": {
+          "n": 86,
+          "recall": 0.604651,
+          "mean_expected_z": 0.655709,
+          "mean_prediction": 2.848837
+        }
+      },
+      "source_bootstrap_95ci": {
+        "exact_accuracy_95ci": [
+          0.34186,
+          0.411628
+        ],
+        "expected_z_mae_95ci": [
+          0.208047,
+          0.236147
+        ],
+        "expected_z_rmse_95ci": [
+          0.263227,
+          0.300792
+        ],
+        "expected_z_spearman_95ci": [
+          0.563602,
+          0.67602
+        ],
+        "macro_f1_95ci": [
+          0.265766,
+          0.345151
+        ],
+        "mae_levels_95ci": [
+          1.02093,
+          1.239535
+        ],
+        "quadratic_weighted_kappa_95ci": [
+          0.441524,
+          0.576781
+        ],
+        "within_one_level_95ci": [
+          0.644186,
+          0.718663
+        ]
+      }
+    },
+    "kimi": {
+      "model": "Cumulative ordinal logistic regression over character 2-4-gram TF-IDF; independently isotonic-calibrated threshold probabilities are monotonized before five-class reconstruction.",
+      "input": "abstract",
+      "source_groups_by_split": {
+        "train": 243,
+        "dev": 81,
+        "calibration": 83,
+        "test": 86
+      },
+      "records_by_split": {
+        "train": 3159,
+        "dev": 1053,
+        "calibration": 1079,
+        "test": 430
+      },
+      "selected_c": 10.0,
+      "dev_by_c_raw": {
+        "0.1": {
+          "n": 1053,
+          "exact_accuracy": 0.271605,
+          "macro_f1": 0.160024,
+          "quadratic_weighted_kappa": 0.328081,
+          "mae_levels": 1.388414,
+          "within_one_level": 0.57265,
+          "expected_z_mae": 0.264823,
+          "expected_z_rmse": 0.314282,
+          "expected_z_spearman": 0.538913
+        },
+        "1.0": {
+          "n": 1053,
+          "exact_accuracy": 0.274454,
+          "macro_f1": 0.162337,
+          "quadratic_weighted_kappa": 0.353539,
+          "mae_levels": 1.361823,
+          "within_one_level": 0.583096,
+          "expected_z_mae": 0.242737,
+          "expected_z_rmse": 0.276372,
+          "expected_z_spearman": 0.556124
+        },
+        "10.0": {
+          "n": 1053,
+          "exact_accuracy": 0.335233,
+          "macro_f1": 0.296491,
+          "quadratic_weighted_kappa": 0.363362,
+          "mae_levels": 1.185185,
+          "within_one_level": 0.623932,
+          "expected_z_mae": 0.228034,
+          "expected_z_rmse": 0.272967,
+          "expected_z_spearman": 0.575328
+        }
+      },
+      "calibration_raw": {
+        "n": 1079,
+        "exact_accuracy": 0.358665,
+        "macro_f1": 0.310115,
+        "quadratic_weighted_kappa": 0.416741,
+        "mae_levels": 1.120482,
+        "within_one_level": 0.658017,
+        "expected_z_mae": 0.221451,
+        "expected_z_rmse": 0.263825,
+        "expected_z_spearman": 0.603273
+      },
+      "calibration_isotonic": {
+        "n": 1079,
+        "exact_accuracy": 0.360519,
+        "macro_f1": 0.31111,
+        "quadratic_weighted_kappa": 0.563675,
+        "mae_levels": 1.04912,
+        "within_one_level": 0.71177,
+        "expected_z_mae": 0.203153,
+        "expected_z_rmse": 0.255636,
+        "expected_z_spearman": 0.639277
+      },
+      "test_raw": {
+        "n": 430,
+        "exact_accuracy": 0.334884,
+        "macro_f1": 0.255806,
+        "quadratic_weighted_kappa": 0.468855,
+        "mae_levels": 1.24186,
+        "within_one_level": 0.630233,
+        "expected_z_mae": 0.248752,
+        "expected_z_rmse": 0.305524,
+        "expected_z_spearman": 0.633406
+      },
+      "test_isotonic_calibrated": {
+        "n": 430,
+        "exact_accuracy": 0.332558,
+        "macro_f1": 0.227106,
+        "quadratic_weighted_kappa": 0.488144,
+        "mae_levels": 1.232558,
+        "within_one_level": 0.648837,
+        "expected_z_mae": 0.225267,
+        "expected_z_rmse": 0.291713,
+        "expected_z_spearman": 0.62593
+      },
+      "test_by_level_isotonic_calibrated": {
+        "L0": {
+          "n": 86,
+          "recall": 0.872093,
+          "mean_expected_z": 0.196595,
+          "mean_prediction": 0.337209
+        },
+        "L1": {
+          "n": 86,
+          "recall": 0.0,
+          "mean_expected_z": 0.207751,
+          "mean_prediction": 0.325581
+        },
+        "L2": {
+          "n": 86,
+          "recall": 0.127907,
+          "mean_expected_z": 0.610133,
+          "mean_prediction": 2.569767
+        },
+        "L3": {
+          "n": 86,
+          "recall": 0.011628,
+          "mean_expected_z": 0.59664,
+          "mean_prediction": 2.337209
+        },
+        "L4": {
+          "n": 86,
+          "recall": 0.651163,
+          "mean_expected_z": 0.651204,
+          "mean_prediction": 2.802326
+        }
+      },
+      "source_bootstrap_95ci": {
+        "exact_accuracy_95ci": [
+          0.304651,
+          0.360465
+        ],
+        "expected_z_mae_95ci": [
+          0.206241,
+          0.243664
+        ],
+        "expected_z_rmse_95ci": [
+          0.266958,
+          0.314769
+        ],
+        "expected_z_spearman_95ci": [
+          0.567481,
+          0.684765
+        ],
+        "macro_f1_95ci": [
+          0.200064,
+          0.253804
+        ],
+        "mae_levels_95ci": [
+          1.113953,
+          1.351163
+        ],
+        "quadratic_weighted_kappa_95ci": [
+          0.414183,
+          0.566888
+        ],
+        "within_one_level_95ci": [
+          0.604651,
+          0.693023
+        ]
+      }
+    },
+    "wenxin": {
+      "model": "Cumulative ordinal logistic regression over character 2-4-gram TF-IDF; independently isotonic-calibrated threshold probabilities are monotonized before five-class reconstruction.",
+      "input": "abstract",
+      "source_groups_by_split": {
+        "train": 243,
+        "dev": 81,
+        "calibration": 83,
+        "test": 86
+      },
+      "records_by_split": {
+        "train": 3159,
+        "dev": 1053,
+        "calibration": 1079,
+        "test": 430
+      },
+      "selected_c": 10.0,
+      "dev_by_c_raw": {
+        "0.1": {
+          "n": 1053,
+          "exact_accuracy": 0.271605,
+          "macro_f1": 0.155044,
+          "quadratic_weighted_kappa": 0.373349,
+          "mae_levels": 1.344729,
+          "within_one_level": 0.594492,
+          "expected_z_mae": 0.264247,
+          "expected_z_rmse": 0.313699,
+          "expected_z_spearman": 0.546937
+        },
+        "1.0": {
+          "n": 1053,
+          "exact_accuracy": 0.270655,
+          "macro_f1": 0.154745,
+          "quadratic_weighted_kappa": 0.355401,
+          "mae_levels": 1.361823,
+          "within_one_level": 0.586895,
+          "expected_z_mae": 0.239881,
+          "expected_z_rmse": 0.274296,
+          "expected_z_spearman": 0.560458
+        },
+        "10.0": {
+          "n": 1053,
+          "exact_accuracy": 0.301994,
+          "macro_f1": 0.242377,
+          "quadratic_weighted_kappa": 0.362152,
+          "mae_levels": 1.248813,
+          "within_one_level": 0.615385,
+          "expected_z_mae": 0.230671,
+          "expected_z_rmse": 0.277697,
+          "expected_z_spearman": 0.561786
+        }
+      },
+      "calibration_raw": {
+        "n": 1079,
+        "exact_accuracy": 0.322521,
+        "macro_f1": 0.255892,
+        "quadratic_weighted_kappa": 0.407072,
+        "mae_levels": 1.196478,
+        "within_one_level": 0.644115,
+        "expected_z_mae": 0.222861,
+        "expected_z_rmse": 0.267763,
+        "expected_z_spearman": 0.611798
+      },
+      "calibration_isotonic": {
+        "n": 1079,
+        "exact_accuracy": 0.330862,
+        "macro_f1": 0.281608,
+        "quadratic_weighted_kappa": 0.528628,
+        "mae_levels": 1.12975,
+        "within_one_level": 0.680259,
+        "expected_z_mae": 0.204315,
+        "expected_z_rmse": 0.258354,
+        "expected_z_spearman": 0.641051
+      },
+      "test_raw": {
+        "n": 430,
+        "exact_accuracy": 0.346512,
+        "macro_f1": 0.288363,
+        "quadratic_weighted_kappa": 0.387261,
+        "mae_levels": 1.323256,
+        "within_one_level": 0.6,
+        "expected_z_mae": 0.268101,
+        "expected_z_rmse": 0.324849,
+        "expected_z_spearman": 0.612354
+      },
+      "test_isotonic_calibrated": {
+        "n": 430,
+        "exact_accuracy": 0.381395,
+        "macro_f1": 0.298685,
+        "quadratic_weighted_kappa": 0.573379,
+        "mae_levels": 1.065116,
+        "within_one_level": 0.7,
+        "expected_z_mae": 0.215633,
+        "expected_z_rmse": 0.274405,
+        "expected_z_spearman": 0.634654
+      },
+      "test_by_level_isotonic_calibrated": {
+        "L0": {
+          "n": 86,
+          "recall": 0.895349,
+          "mean_expected_z": 0.214873,
+          "mean_prediction": 0.302326
+        },
+        "L1": {
+          "n": 86,
+          "recall": 0.034884,
+          "mean_expected_z": 0.276052,
+          "mean_prediction": 0.593023
+        },
+        "L2": {
+          "n": 86,
+          "recall": 0.209302,
+          "mean_expected_z": 0.69835,
+          "mean_prediction": 3.0
+        },
+        "L3": {
+          "n": 86,
+          "recall": 0.081395,
+          "mean_expected_z": 0.635895,
+          "mean_prediction": 2.77907
+        },
+        "L4": {
+          "n": 86,
+          "recall": 0.686047,
+          "mean_expected_z": 0.713331,
+          "mean_prediction": 3.116279
+        }
+      },
+      "source_bootstrap_95ci": {
+        "exact_accuracy_95ci": [
+          0.353488,
+          0.409302
+        ],
+        "expected_z_mae_95ci": [
+          0.199425,
+          0.231336
+        ],
+        "expected_z_rmse_95ci": [
+          0.253008,
+          0.295039
+        ],
+        "expected_z_spearman_95ci": [
+          0.578438,
+          0.68858
+        ],
+        "macro_f1_95ci": [
+          0.266187,
+          0.330254
+        ],
+        "mae_levels_95ci": [
+          0.965058,
+          1.176744
+        ],
+        "quadratic_weighted_kappa_95ci": [
+          0.501926,
+          0.638125
+        ],
+        "within_one_level_95ci": [
+          0.65814,
+          0.737209
+        ]
+      }
+    }
+  },
+  "length_strata": {
+    "source_length_reference": "H abstract char_count; cut points are calculated on the fixed training partition only.",
+    "cut_points": {
+      "short_at_or_below": 206.667,
+      "medium_at_or_below": 283.333
+    },
+    "strata": {
+      "short": {
+        "source_groups": 30,
+        "records": 510,
+        "metric": {
+          "n": 510,
+          "exact_accuracy": 0.266667,
+          "macro_f1": 0.216292,
+          "quadratic_weighted_kappa": 0.438625,
+          "mae_levels": 1.315686,
+          "within_one_level": 0.617647,
+          "expected_z_mae": 0.235642,
+          "expected_z_rmse": 0.298285,
+          "expected_z_spearman": 0.588071
+        },
+        "source_bootstrap_95ci": {
+          "exact_accuracy_95ci": [
+            0.233333,
+            0.298039
+          ],
+          "expected_z_mae_95ci": [
+            0.216467,
+            0.257787
+          ],
+          "expected_z_rmse_95ci": [
+            0.269022,
+            0.327866
+          ],
+          "expected_z_spearman_95ci": [
+            0.536445,
+            0.637232
+          ],
+          "macro_f1_95ci": [
+            0.182842,
+            0.248696
+          ],
+          "mae_levels_95ci": [
+            1.192108,
+            1.454951
+          ],
+          "quadratic_weighted_kappa_95ci": [
+            0.35928,
+            0.511773
+          ],
+          "within_one_level_95ci": [
+            0.572549,
+            0.662745
+          ]
+        }
+      },
+      "medium": {
+        "source_groups": 28,
+        "records": 476,
+        "metric": {
+          "n": 476,
+          "exact_accuracy": 0.315126,
+          "macro_f1": 0.266749,
+          "quadratic_weighted_kappa": 0.480631,
+          "mae_levels": 1.170168,
+          "within_one_level": 0.678571,
+          "expected_z_mae": 0.224433,
+          "expected_z_rmse": 0.279055,
+          "expected_z_spearman": 0.57152
+        },
+        "source_bootstrap_95ci": {
+          "exact_accuracy_95ci": [
+            0.277311,
+            0.352941
+          ],
+          "expected_z_mae_95ci": [
+            0.206568,
+            0.244288
+          ],
+          "expected_z_rmse_95ci": [
+            0.254358,
+            0.304891
+          ],
+          "expected_z_spearman_95ci": [
+            0.5058,
+            0.637585
+          ],
+          "macro_f1_95ci": [
+            0.227711,
+            0.304724
+          ],
+          "mae_levels_95ci": [
+            1.062972,
+            1.285819
+          ],
+          "quadratic_weighted_kappa_95ci": [
+            0.407539,
+            0.544962
+          ],
+          "within_one_level_95ci": [
+            0.636555,
+            0.722689
+          ]
+        }
+      },
+      "long": {
+        "source_groups": 28,
+        "records": 476,
+        "metric": {
+          "n": 476,
+          "exact_accuracy": 0.344538,
+          "macro_f1": 0.296875,
+          "quadratic_weighted_kappa": 0.505071,
+          "mae_levels": 1.102941,
+          "within_one_level": 0.695378,
+          "expected_z_mae": 0.206046,
+          "expected_z_rmse": 0.26116,
+          "expected_z_spearman": 0.562881
+        },
+        "source_bootstrap_95ci": {
+          "exact_accuracy_95ci": [
+            0.30042,
+            0.392857
+          ],
+          "expected_z_mae_95ci": [
+            0.187845,
+            0.226359
+          ],
+          "expected_z_rmse_95ci": [
+            0.236187,
+            0.288924
+          ],
+          "expected_z_spearman_95ci": [
+            0.466193,
+            0.647484
+          ],
+          "macro_f1_95ci": [
+            0.241271,
+            0.352287
+          ],
+          "mae_levels_95ci": [
+            0.981092,
+            1.231197
+          ],
+          "quadratic_weighted_kappa_95ci": [
+            0.416523,
+            0.585237
+          ],
+          "within_one_level_95ci": [
+            0.64916,
+            0.739496
+          ]
+        }
+      }
+    }
+  },
+  "temporal": {
+    "model": "Cumulative ordinal logistic regression over character 2-4-gram TF-IDF; independently isotonic-calibrated threshold probabilities are monotonized before five-class reconstruction.",
+    "input": "abstract",
+    "source_groups_by_split": {
+      "train": 243,
+      "dev": 57,
+      "calibration": 81,
+      "test": 112
+    },
+    "records_by_split": {
+      "train": 4131,
+      "dev": 969,
+      "calibration": 1377,
+      "test": 1904
+    },
+    "selected_c": 10.0,
+    "dev_by_c_raw": {
+      "0.1": {
+        "n": 969,
+        "exact_accuracy": 0.252838,
+        "macro_f1": 0.130814,
+        "quadratic_weighted_kappa": 0.241283,
+        "mae_levels": 1.446852,
+        "within_one_level": 0.553148,
+        "expected_z_mae": 0.25793,
+        "expected_z_rmse": 0.303126,
+        "expected_z_spearman": 0.58752
+      },
+      "1.0": {
+        "n": 969,
+        "exact_accuracy": 0.255934,
+        "macro_f1": 0.136345,
+        "quadratic_weighted_kappa": 0.259686,
+        "mae_levels": 1.430341,
+        "within_one_level": 0.558308,
+        "expected_z_mae": 0.232069,
+        "expected_z_rmse": 0.264525,
+        "expected_z_spearman": 0.601203
+      },
+      "10.0": {
+        "n": 969,
+        "exact_accuracy": 0.375645,
+        "macro_f1": 0.322025,
+        "quadratic_weighted_kappa": 0.324899,
+        "mae_levels": 1.119711,
+        "within_one_level": 0.638803,
+        "expected_z_mae": 0.231188,
+        "expected_z_rmse": 0.279013,
+        "expected_z_spearman": 0.595902
+      }
+    },
+    "calibration_raw": {
+      "n": 1377,
+      "exact_accuracy": 0.324619,
+      "macro_f1": 0.258556,
+      "quadratic_weighted_kappa": 0.238885,
+      "mae_levels": 1.23602,
+      "within_one_level": 0.598402,
+      "expected_z_mae": 0.245282,
+      "expected_z_rmse": 0.294832,
+      "expected_z_spearman": 0.539681
+    },
+    "calibration_isotonic": {
+      "n": 1377,
+      "exact_accuracy": 0.294118,
+      "macro_f1": 0.243825,
+      "quadratic_weighted_kappa": 0.470203,
+      "mae_levels": 1.229484,
+      "within_one_level": 0.651416,
+      "expected_z_mae": 0.216628,
+      "expected_z_rmse": 0.267233,
+      "expected_z_spearman": 0.590107
+    },
+    "test_raw": {
+      "n": 1904,
+      "exact_accuracy": 0.309874,
+      "macro_f1": 0.228056,
+      "quadratic_weighted_kappa": 0.18305,
+      "mae_levels": 1.297269,
+      "within_one_level": 0.586134,
+      "expected_z_mae": 0.252366,
+      "expected_z_rmse": 0.305734,
+      "expected_z_spearman": 0.539207
+    },
+    "test_isotonic_calibrated": {
+      "n": 1904,
+      "exact_accuracy": 0.287815,
+      "macro_f1": 0.23011,
+      "quadratic_weighted_kappa": 0.43429,
+      "mae_levels": 1.253151,
+      "within_one_level": 0.640756,
+      "expected_z_mae": 0.219594,
+      "expected_z_rmse": 0.272062,
+      "expected_z_spearman": 0.548575
+    },
+    "test_by_level_isotonic_calibrated": {
+      "L0": {
+        "n": 112,
+        "recall": 0.821429,
+        "mean_expected_z": 0.277799,
+        "mean_prediction": 0.616071
+      },
+      "L1": {
+        "n": 448,
+        "recall": 0.017857,
+        "mean_expected_z": 0.299351,
+        "mean_prediction": 0.727679
+      },
+      "L2": {
+        "n": 448,
+        "recall": 0.252232,
+        "mean_expected_z": 0.632387,
+        "mean_prediction": 2.65625
+      },
+      "L3": {
+        "n": 448,
+        "recall": 0.058036,
+        "mean_expected_z": 0.621995,
+        "mean_prediction": 2.566964
+      },
+      "L4": {
+        "n": 448,
+        "recall": 0.689732,
+        "mean_expected_z": 0.703039,
+        "mean_prediction": 3.127232
+      }
+    },
+    "source_bootstrap_95ci": {
+      "exact_accuracy_95ci": [
+        0.270995,
+        0.304622
+      ],
+      "expected_z_mae_95ci": [
+        0.210459,
+        0.229604
+      ],
+      "expected_z_rmse_95ci": [
+        0.259698,
+        0.285202
+      ],
+      "expected_z_spearman_95ci": [
+        0.512337,
+        0.586493
+      ],
+      "macro_f1_95ci": [
+        0.212233,
+        0.247317
+      ],
+      "mae_levels_95ci": [
+        1.188537,
+        1.319853
+      ],
+      "quadratic_weighted_kappa_95ci": [
+        0.388827,
+        0.4798
+      ],
+      "within_one_level_95ci": [
+        0.615533,
+        0.664916
+      ]
+    },
+    "year_protocol": {
+      "train": "2000-2010",
+      "dev": "2011-2013",
+      "calibration": "2014-2016",
+      "test": "2017-2020"
+    }
+  }
+}

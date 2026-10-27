@@ -1,0 +1,19 @@
+{
+  "run_id": "kimi-batch-20261013T135522Z",
+  "provider": "kimi",
+  "model_requested": "kimi-k2.6",
+  "temperature": 1,
+  "endpoint": "https://api.moonshot.cn/v1/chat/completions",
+  "total_provider_tasks": 2124,
+  "pending_at_start": 10,
+  "workers": 1,
+  "request_interval_seconds": 10.0,
+  "started_at_utc": "2026-10-13T13:55:22.179441+00:00",
+  "status": "completed",
+  "completed": 10,
+  "failed": 0,
+  "deferred": 0,
+  "failures": [],
+  "last_flush_at_utc": "2026-10-13T14:01:52.526298+00:00",
+  "finished_at_utc": "2026-10-13T14:01:52.585293+00:00"
+}

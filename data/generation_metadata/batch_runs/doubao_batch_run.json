@@ -1,0 +1,16 @@
+{
+  "run_id": "doubao-batch-20261013T114321Z",
+  "provider": "doubao",
+  "model_requested": "ep-20261012224303-v4dnb",
+  "endpoint": "https://ark.cn-beijing.volces.com/api/v3/chat/completions",
+  "total_provider_tasks": 2124,
+  "pending_at_start": 483,
+  "workers": 8,
+  "started_at_utc": "2026-10-13T11:43:21.685694+00:00",
+  "status": "completed",
+  "completed": 483,
+  "failed": 0,
+  "failures": [],
+  "last_flush_at_utc": "2026-10-13T12:22:18.666624+00:00",
+  "finished_at_utc": "2026-10-13T12:22:18.791624+00:00"
+}

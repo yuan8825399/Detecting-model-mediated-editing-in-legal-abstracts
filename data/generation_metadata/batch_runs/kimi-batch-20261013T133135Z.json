@@ -1,0 +1,766 @@
+{
+  "run_id": "kimi-batch-20261013T133135Z",
+  "provider": "kimi",
+  "model_requested": "kimi-k2.6",
+  "temperature": 1,
+  "endpoint": "https://api.moonshot.cn/v1/chat/completions",
+  "total_provider_tasks": 2124,
+  "pending_at_start": 2120,
+  "workers": 8,
+  "started_at_utc": "2026-10-13T13:31:35.230881+00:00",
+  "status": "interrupted",
+  "completed": 3,
+  "failed": 187,
+  "failures": [
+    {
+      "record_id": "kimi-china-law-2007-00057-E2",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2011-00029-E2",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2011-00029-E3",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2007-00057-E3",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2007-00057-E1",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2011-00029-E1",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2011-00029-E4",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2019-00039-E4",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2019-00039-E1",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2019-00039-E2",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2020-00006-E1",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2019-00039-E3",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2020-00006-E2",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2020-00006-E3",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2003-00050-E3",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2003-00050-E4",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2003-00050-E1",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2003-00050-E2",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2020-00006-E4",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2014-00050-E1",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2014-00050-E2",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2008-00034-E2",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2008-00034-E1",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2014-00050-E4",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2014-00050-E3",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2008-00034-E3",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2008-00034-E4",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2005-00099-E1",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2005-00099-E4",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2005-00099-E3",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2005-00099-E2",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2018-00096-E1",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2018-00096-E2",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2018-00096-E4",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2018-00096-E3",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2009-00039-E1",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2009-00039-E4",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2009-00039-E3",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2009-00039-E2",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2003-00116-E2",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2003-00116-E1",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2003-00116-E3",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2013-00052-E2",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2013-00052-E4",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2003-00116-E4",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2013-00052-E1",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2013-00052-E3",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2012-00071-E2",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2012-00071-E1",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2004-00100-E3",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2004-00100-E2",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2012-00071-E3",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2012-00071-E4",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2004-00100-E1",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2004-00100-E4",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2003-00053-E1",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2003-00053-E3",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2019-00117-E4",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2003-00053-E4",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2019-00117-E1",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2019-00117-E2",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2019-00117-E3",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2006-00005-E1",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2006-00005-E3",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2006-00005-E2",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2003-00142-E1",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2003-00142-E2",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2006-00005-E4",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2003-00142-E3",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2003-00142-E4",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2017-00053-E2",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2017-00053-E1",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2005-00094-E1",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2005-00094-E2",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2017-00053-E4",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2017-00053-E3",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2005-00094-E3",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2005-00094-E4",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2003-00085-E1",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2003-00085-E2",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2003-00085-E4",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2003-00085-E3",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2014-00092-E1",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2014-00092-E2",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2014-00092-E4",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2014-00092-E3",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2018-00086-E1",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2018-00086-E4",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2018-00086-E2",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2018-00086-E3",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2013-00010-E1",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2003-00057-E2",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2013-00010-E2",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2013-00010-E3",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2003-00057-E3",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2013-00010-E4",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2003-00057-E1",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2003-00057-E4",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2014-00035-E1",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2014-00035-E2",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2014-00035-E4",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2009-00089-E1",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2009-00089-E2",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2014-00035-E3",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2009-00089-E4",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2007-00004-E1",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2007-00004-E3",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2007-00004-E4",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2018-00037-E2",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2018-00037-E1",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2007-00004-E2",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2018-00037-E3",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2018-00037-E4",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2002-00080-E2",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2002-00080-E4",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2002-00080-E1",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2015-00140-E1",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2015-00140-E2",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2002-00080-E3",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2015-00140-E3",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2008-00093-E3",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2008-00093-E1",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2015-00140-E4",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2008-00093-E4",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2008-00093-E2",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2016-00073-E1",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2016-00073-E3",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2016-00073-E2",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2016-00073-E4",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2020-00128-E2",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2020-00128-E3",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2020-00128-E1",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2020-00128-E4",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2013-00138-E4",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2015-00025-E2",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2015-00025-E3",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2015-00025-E1",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2013-00138-E1",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2013-00138-E3",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2013-00138-E2",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2004-00054-E4",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2001-00026-E1",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2004-00054-E1",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2015-00025-E4",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2004-00054-E2",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2004-00054-E3",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2001-00026-E2",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2001-00026-E3",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2020-00098-E2",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2020-00098-E3",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2020-00098-E1",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2017-00143-E1",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2001-00026-E4",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2020-00098-E4",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2017-00143-E2",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2017-00143-E3",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2003-00079-E1",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2003-00079-E3",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2003-00079-E2",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2003-00079-E4",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2017-00143-E4",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2020-00010-E3",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2016-00030-E3",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2016-00030-E1",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2020-00010-E2",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2020-00010-E4",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2020-00010-E1",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2016-00030-E2",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2016-00030-E4",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2020-00030-E1",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2020-00030-E2",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2016-00066-E1",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2020-00030-E3",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2020-00030-E4",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2016-00066-E2",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2016-00066-E4",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2016-00063-E2",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2018-00111-E2",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2018-00111-E1",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2016-00063-E1",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2018-00111-E3",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2018-00111-E4",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2016-00063-E3",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2016-00063-E4",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2010-00064-E1",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2010-00064-E2",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    },
+    {
+      "record_id": "kimi-china-law-2010-00064-E3",
+      "error": "HTTPError:429 Client Error: Too Many Requests for url: https://api.moonshot.cn/v1/chat/completions"
+    }
+  ],
+  "last_flush_at_utc": "2026-10-13T13:33:11.741201+00:00",
+  "interruption_reason": "process ended before completing the queue"
+}

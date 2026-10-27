@@ -1,0 +1,261 @@
+[
+  {
+    "source_id": "china-law-2004-00095",
+    "group_id": "group-086f566f57807774",
+    "group_split": "dev",
+    "source_title_clean": "《中国法学》创刊20周年纪念会简讯",
+    "decision": "excluded_after_manual_review"
+  },
+  {
+    "source_id": "china-law-2005-00052",
+    "group_id": "group-da279080eeb6c969",
+    "group_split": "test",
+    "source_title_clean": "苏州大学王健法学院",
+    "decision": "excluded_after_manual_review"
+  },
+  {
+    "source_id": "china-law-2006-00069",
+    "group_id": "group-d5d5b2351c546205",
+    "group_split": "train",
+    "source_title_clean": "江西财经大学法学院",
+    "decision": "excluded_after_manual_review"
+  },
+  {
+    "source_id": "china-law-2008-00087",
+    "group_id": "group-7b17fa5548adce0f",
+    "group_split": "train",
+    "source_title_clean": "中国法学纪事",
+    "decision": "excluded_after_manual_review"
+  },
+  {
+    "source_id": "china-law-2010-00018",
+    "group_id": "group-f2519e27def62d6b",
+    "group_split": "train",
+    "source_title_clean": "中国法学纪事",
+    "decision": "excluded_after_manual_review"
+  },
+  {
+    "source_id": "china-law-2011-00024",
+    "group_id": "group-9ddfd105ea7d14a4",
+    "group_split": "train",
+    "source_title_clean": "中国法学纪事",
+    "decision": "excluded_after_manual_review"
+  },
+  {
+    "source_id": "china-law-2012-00006",
+    "group_id": "group-a578f412017206f8",
+    "group_split": "train",
+    "source_title_clean": "中国法学纪事",
+    "decision": "excluded_after_manual_review"
+  },
+  {
+    "source_id": "china-law-2012-00035",
+    "group_id": "group-b67216f38f818cd0",
+    "group_split": "calibration",
+    "source_title_clean": "中国法学纪事",
+    "decision": "excluded_after_manual_review"
+  },
+  {
+    "source_id": "china-law-2013-00052",
+    "group_id": "group-80c23b8963b57c36",
+    "group_split": "calibration",
+    "source_title_clean": "中国法学纪事",
+    "decision": "excluded_after_manual_review"
+  },
+  {
+    "source_id": "china-law-2013-00130",
+    "group_id": "group-cfa3414567a4d92e",
+    "group_split": "dev",
+    "source_title_clean": "中国法学纪事",
+    "decision": "excluded_after_manual_review"
+  },
+  {
+    "source_id": "china-law-2014-00111",
+    "group_id": "group-3ebf04bfcad312fa",
+    "group_split": "dev",
+    "source_title_clean": "中国法学纪事",
+    "decision": "excluded_after_manual_review"
+  },
+  {
+    "source_id": "china-law-2015-00075",
+    "group_id": "group-abb374db2a81f01d",
+    "group_split": "train",
+    "source_title_clean": "中国法学纪事",
+    "decision": "excluded_after_manual_review"
+  },
+  {
+    "source_id": "china-law-2015-00076",
+    "group_id": "group-80b36db010d26c94",
+    "group_split": "train",
+    "source_title_clean": "中国法学",
+    "decision": "excluded_after_manual_review"
+  },
+  {
+    "source_id": "china-law-2016-00098",
+    "group_id": "group-fa58c37e81b2a01d",
+    "group_split": "dev",
+    "source_title_clean": "中国法学纪事",
+    "decision": "excluded_after_manual_review"
+  },
+  {
+    "source_id": "china-law-2017-00003",
+    "group_id": "group-1a75ac6e1f05d01c",
+    "group_split": "train",
+    "source_title_clean": "中国法学纪事",
+    "decision": "excluded_after_manual_review"
+  },
+  {
+    "source_id": "china-law-2017-00049",
+    "group_id": "group-549633f77938b509",
+    "group_split": "train",
+    "source_title_clean": "中国法学纪事",
+    "decision": "excluded_after_manual_review"
+  },
+  {
+    "source_id": "china-law-2017-00122",
+    "group_id": "group-9b5f0e2d88fb20d2",
+    "group_split": "dev",
+    "source_title_clean": "中国法学纪事",
+    "decision": "excluded_after_manual_review"
+  },
+  {
+    "source_id": "china-law-2018-00025",
+    "group_id": "group-844a34d83d428005",
+    "group_split": "train",
+    "source_title_clean": "中國法学",
+    "decision": "excluded_after_manual_review"
+  },
+  {
+    "source_id": "china-law-2018-00096",
+    "group_id": "group-03b542e578232527",
+    "group_split": "test",
+    "source_title_clean": "中国法学",
+    "decision": "excluded_after_manual_review"
+  },
+  {
+    "source_id": "china-law-2019-00047",
+    "group_id": "group-dffb97e61f5b5e03",
+    "group_split": "train",
+    "source_title_clean": "《中国法学》",
+    "decision": "excluded_after_manual_review"
+  },
+  {
+    "source_id": "china-law-2020-00003",
+    "group_id": "group-fdf801dc75813549",
+    "group_split": "train",
+    "source_title_clean": "中國法学",
+    "decision": "excluded_after_manual_review"
+  },
+  {
+    "source_id": "china-law-2020-00078",
+    "group_id": "group-378e1c935b13967b",
+    "group_split": "train",
+    "source_title_clean": "中国法学纪事",
+    "decision": "excluded_after_manual_review"
+  },
+  {
+    "source_id": "china-law-2004-00042",
+    "group_id": "group-7fca4f1952208f94",
+    "group_split": "calibration",
+    "source_title_clean": "构建国际刑事法学论坛 共商全球打击犯罪对策——第17届国际刑法学大会综述",
+    "decision": "excluded_in_latest_reviewed_csv"
+  },
+  {
+    "source_id": "china-law-2004-00043",
+    "group_id": "group-edcb3566b1b495e0",
+    "group_split": "calibration",
+    "source_title_clean": "中国法学会商法学研究会2004年年会综述",
+    "decision": "excluded_after_manual_truncation_review"
+  },
+  {
+    "source_id": "china-law-2004-00047",
+    "group_id": "group-d1814ad9213039d9",
+    "group_split": "train",
+    "source_title_clean": "2004年全国法学期刊主编会议综述",
+    "decision": "excluded_after_manual_truncation_review"
+  },
+  {
+    "source_id": "china-law-2004-00094",
+    "group_id": "group-95429a3ba4f02241",
+    "group_split": "train",
+    "source_title_clean": "欧盟和WTO处理贸易与环境案件法律之比较——以欧洲法院和WTO争端解决机构的实践为例",
+    "decision": "excluded_after_manual_truncation_review"
+  },
+  {
+    "source_id": "china-law-2004-00115",
+    "group_id": "group-473b6b7e076c46b3",
+    "group_split": "train",
+    "source_title_clean": "行政文明——对行政法理论基础的再认识",
+    "decision": "excluded_after_manual_truncation_review"
+  },
+  {
+    "source_id": "china-law-2004-00138",
+    "group_id": "group-4ea3d6d78ad2208c",
+    "group_split": "train",
+    "source_title_clean": "中国法学会诉讼法学研究会2003年年会综述",
+    "decision": "excluded_in_latest_reviewed_csv"
+  },
+  {
+    "source_id": "china-law-2005-00093",
+    "group_id": "group-9519d81d517a9425",
+    "group_split": "train",
+    "source_title_clean": "对我国民法中民事行为制度的思考",
+    "decision": "excluded_after_manual_truncation_review"
+  },
+  {
+    "source_id": "china-law-2005-00094",
+    "group_id": "group-b309ad8846826ae8",
+    "group_split": "train",
+    "source_title_clean": "论网络游戏中虚拟财产权利的法律属性",
+    "decision": "excluded_after_manual_truncation_review"
+  },
+  {
+    "source_id": "china-law-2008-00017",
+    "group_id": "group-e2340f8da79859b8",
+    "group_split": "train",
+    "source_title_clean": "更加紧密联系实际——民事诉讼法学展望",
+    "decision": "excluded_after_manual_truncation_review"
+  },
+  {
+    "source_id": "china-law-2011-00036",
+    "group_id": "group-1b7b94492e234cf6",
+    "group_split": "calibration",
+    "source_title_clean": "北京师范大学刑事法律科学研究院",
+    "decision": "excluded_in_latest_reviewed_csv"
+  },
+  {
+    "source_id": "china-law-2012-00094",
+    "group_id": "group-40a7e026e6fb1f42",
+    "group_split": "train",
+    "source_title_clean": "西南政法大学 中国农村经济法制创新研究中心简介",
+    "decision": "excluded_in_latest_reviewed_csv"
+  },
+  {
+    "source_id": "china-law-2013-00002",
+    "group_id": "group-daccd0e40d98889f",
+    "group_split": "train",
+    "source_title_clean": "西南财经大学法学院",
+    "decision": "excluded_in_latest_reviewed_csv"
+  },
+  {
+    "source_id": "china-law-2014-00002",
+    "group_id": "group-928a0163480354d8",
+    "group_split": "calibration",
+    "source_title_clean": "中共中央关于全面推进依法治国若干重大问题的决定",
+    "decision": "excluded_in_latest_reviewed_csv"
+  },
+  {
+    "source_id": "china-law-2014-00082",
+    "group_id": "group-4e36fa2d529c8472",
+    "group_split": "test",
+    "source_title_clean": "在《中国法学》杂志创刊30周年纪念座谈会上的讲话",
+    "decision": "excluded_in_latest_reviewed_csv"
+  },
+  {
+    "source_id": "china-law-2017-00025",
+    "group_id": "group-de76b57066160626",
+    "group_split": "train",
+    "source_title_clean": "习近平全球治理与国际法治思想研究",
+    "decision": "excluded_in_latest_reviewed_csv"
+  }
+]

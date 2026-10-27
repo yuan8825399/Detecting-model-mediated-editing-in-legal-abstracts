@@ -1,0 +1,18 @@
+{
+  "run_id": "deepseek-batch-20261015T061656Z",
+  "provider": "deepseek",
+  "model_requested": "deepseek-chat",
+  "temperature": 0.2,
+  "max_tokens": 2048,
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "total_provider_tasks": 2124,
+  "pending_at_start": 1472,
+  "request_interval_seconds": 2.0,
+  "started_at_utc": "2026-10-15T06:16:56.777521+00:00",
+  "status": "paused_error",
+  "completed": 0,
+  "failed": 1,
+  "last_error": "ConnectionError: HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NewConnectionError(\"HTTPSConnection(host='ap",
+  "last_flush_at_utc": "2026-10-15T06:17:02.896019+00:00",
+  "finished_at_utc": "2026-10-15T06:17:02.896019+00:00"
+}

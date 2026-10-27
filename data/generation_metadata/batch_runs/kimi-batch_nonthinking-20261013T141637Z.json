@@ -1,0 +1,20 @@
+{
+  "run_id": "kimi-batch_nonthinking-20261013T141637Z",
+  "provider": "kimi",
+  "model_requested": "kimi-k2.6",
+  "temperature": 0.6,
+  "thinking_mode": "disabled",
+  "endpoint": "https://api.moonshot.cn/v1/chat/completions",
+  "total_provider_tasks": 2124,
+  "pending_at_start": 10,
+  "workers": 1,
+  "request_interval_seconds": 3.0,
+  "started_at_utc": "2026-10-13T14:16:37.851688+00:00",
+  "status": "completed",
+  "completed": 10,
+  "failed": 0,
+  "deferred": 0,
+  "failures": [],
+  "last_flush_at_utc": "2026-10-13T14:19:11.317007+00:00",
+  "finished_at_utc": "2026-10-13T14:19:11.425004+00:00"
+}

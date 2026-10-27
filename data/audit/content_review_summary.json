@@ -1,0 +1,117 @@
+{
+  "scope": "formal benchmark E records only; no pilot records or H records",
+  "edit_count": 7888,
+  "source_count": 493,
+  "seed": 20261016,
+  "random_per_provider_level": 8,
+  "probability_sample_count": 128,
+  "extreme_flag_census_count": 7,
+  "refusal_alert_census_count": 0,
+  "article_reference_census_count": 29,
+  "quoted_title_census_count": 163,
+  "anchor_risk_sample_count": 32,
+  "selected_unique_count": 347,
+  "priority_counts": {
+    "P1": 305,
+    "P2": 2597,
+    "P3": 4986
+  },
+  "priority_by_provider_level": {
+    "deepseek:E1": {
+      "P1": 7,
+      "P2": 22,
+      "P3": 464
+    },
+    "deepseek:E2": {
+      "P1": 8,
+      "P2": 109,
+      "P3": 376
+    },
+    "deepseek:E3": {
+      "P1": 12,
+      "P2": 109,
+      "P3": 372
+    },
+    "deepseek:E4": {
+      "P1": 18,
+      "P2": 194,
+      "P3": 281
+    },
+    "doubao:E1": {
+      "P1": 7,
+      "P2": 24,
+      "P3": 462
+    },
+    "doubao:E2": {
+      "P1": 17,
+      "P2": 231,
+      "P3": 245
+    },
+    "doubao:E3": {
+      "P1": 19,
+      "P2": 232,
+      "P3": 242
+    },
+    "doubao:E4": {
+      "P1": 31,
+      "P2": 238,
+      "P3": 224
+    },
+    "kimi:E1": {
+      "P1": 7,
+      "P2": 22,
+      "P3": 464
+    },
+    "kimi:E2": {
+      "P1": 29,
+      "P2": 221,
+      "P3": 243
+    },
+    "kimi:E3": {
+      "P1": 28,
+      "P2": 225,
+      "P3": 240
+    },
+    "kimi:E4": {
+      "P1": 42,
+      "P2": 244,
+      "P3": 207
+    },
+    "wenxin:E1": {
+      "P1": 10,
+      "P2": 32,
+      "P3": 451
+    },
+    "wenxin:E2": {
+      "P1": 24,
+      "P2": 227,
+      "P3": 242
+    },
+    "wenxin:E3": {
+      "P1": 17,
+      "P2": 232,
+      "P3": 244
+    },
+    "wenxin:E4": {
+      "P1": 29,
+      "P2": 235,
+      "P3": 229
+    }
+  },
+  "token_alert_counts": {
+    "digits_removed": 248,
+    "articles_removed": 11,
+    "quoted_titles_removed": 57,
+    "modal_terms_changed": 2348,
+    "refusal_outputs": 0,
+    "source_genre_alert_groups": 1,
+    "source_truncation_alert_groups": 22
+  },
+  "review_verdicts": {
+    "substantive_change": "legal proposition, conclusion, scope, or legal basis changes",
+    "meaning_preserved": "legal proposition, conclusion, scope, and legal basis preserved",
+    "uncertain": "requires specialist adjudication or fuller source context",
+    "not_assessable": "source or output is not a substantive abstract"
+  },
+  "interpretation": "All flags are screening cues, not semantic-fidelity judgments or exclusion rules."
+}

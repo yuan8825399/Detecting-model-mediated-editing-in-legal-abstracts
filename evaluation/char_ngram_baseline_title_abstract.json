@@ -1,0 +1,313 @@
+{
+  "pooled": {
+    "test_h": 86,
+    "test_e": 1376,
+    "actual_fpr": 0.13953488372093023,
+    "by_provider_level": {
+      "deepseek:E1": {
+        "n": 86,
+        "auroc": 0.6182395889670093,
+        "tpr_at_calibrated_threshold": 0.22093023255813954,
+        "mean_score": 0.3717391654473228
+      },
+      "deepseek:E2": {
+        "n": 86,
+        "auroc": 0.799959437533802,
+        "tpr_at_calibrated_threshold": 0.5,
+        "mean_score": 0.6359214363810655
+      },
+      "deepseek:E3": {
+        "n": 86,
+        "auroc": 0.7930638182801515,
+        "tpr_at_calibrated_threshold": 0.47674418604651164,
+        "mean_score": 0.599895051852269
+      },
+      "deepseek:E4": {
+        "n": 86,
+        "auroc": 0.8841941590048675,
+        "tpr_at_calibrated_threshold": 0.7441860465116279,
+        "mean_score": 0.7865996138843184
+      },
+      "doubao:E1": {
+        "n": 86,
+        "auroc": 0.6166846944294213,
+        "tpr_at_calibrated_threshold": 0.20930232558139536,
+        "mean_score": 0.3685057426093505
+      },
+      "doubao:E2": {
+        "n": 86,
+        "auroc": 0.9521362898864251,
+        "tpr_at_calibrated_threshold": 0.8837209302325582,
+        "mean_score": 1.0812111144224203
+      },
+      "doubao:E3": {
+        "n": 86,
+        "auroc": 0.9334775554353705,
+        "tpr_at_calibrated_threshold": 0.8604651162790697,
+        "mean_score": 0.9964259462538402
+      },
+      "doubao:E4": {
+        "n": 86,
+        "auroc": 0.9536235803136831,
+        "tpr_at_calibrated_threshold": 0.8953488372093024,
+        "mean_score": 1.1171563150203927
+      },
+      "kimi:E1": {
+        "n": 86,
+        "auroc": 0.5376554894537587,
+        "tpr_at_calibrated_threshold": 0.13953488372093023,
+        "mean_score": 0.26855600456919193
+      },
+      "kimi:E2": {
+        "n": 86,
+        "auroc": 0.9474040021633314,
+        "tpr_at_calibrated_threshold": 0.8604651162790697,
+        "mean_score": 1.0246287712073316
+      },
+      "kimi:E3": {
+        "n": 86,
+        "auroc": 0.9187398593834505,
+        "tpr_at_calibrated_threshold": 0.8023255813953488,
+        "mean_score": 0.937000823247076
+      },
+      "kimi:E4": {
+        "n": 86,
+        "auroc": 0.9524067063277447,
+        "tpr_at_calibrated_threshold": 0.9069767441860465,
+        "mean_score": 1.0634759468658963
+      },
+      "wenxin:E1": {
+        "n": 86,
+        "auroc": 0.6262168739859383,
+        "tpr_at_calibrated_threshold": 0.22093023255813954,
+        "mean_score": 0.38312452235962574
+      },
+      "wenxin:E2": {
+        "n": 86,
+        "auroc": 0.9657923201730666,
+        "tpr_at_calibrated_threshold": 0.9069767441860465,
+        "mean_score": 1.1525794381689136
+      },
+      "wenxin:E3": {
+        "n": 86,
+        "auroc": 0.9217144402379664,
+        "tpr_at_calibrated_threshold": 0.8023255813953488,
+        "mean_score": 0.9489456443742872
+      },
+      "wenxin:E4": {
+        "n": 86,
+        "auroc": 0.9583558680367766,
+        "tpr_at_calibrated_threshold": 0.9302325581395349,
+        "mean_score": 1.0675418721602377
+      }
+    },
+    "train_providers": [
+      "deepseek",
+      "doubao",
+      "kimi",
+      "wenxin"
+    ],
+    "test_providers": [
+      "deepseek",
+      "doubao",
+      "kimi",
+      "wenxin"
+    ],
+    "train_h": 243,
+    "train_e": 3888,
+    "calibration_h": 83,
+    "calibration_fpr": 0.04819277108433735,
+    "threshold": 0.6065824560737364,
+    "target_fpr": 0.05,
+    "model": "TF-IDF character 2-4 grams + balanced logistic regression",
+    "input": "title_abstract"
+  },
+  "leave_out_deepseek": {
+    "test_h": 86,
+    "test_e": 344,
+    "actual_fpr": 0.12790697674418605,
+    "by_provider_level": {
+      "deepseek:E1": {
+        "n": 86,
+        "auroc": 0.5953893996755002,
+        "tpr_at_calibrated_threshold": 0.20930232558139536,
+        "mean_score": 0.23780939390560996
+      },
+      "deepseek:E2": {
+        "n": 86,
+        "auroc": 0.7814359113034072,
+        "tpr_at_calibrated_threshold": 0.4883720930232558,
+        "mean_score": 0.4582666246552175
+      },
+      "deepseek:E3": {
+        "n": 86,
+        "auroc": 0.760208220659816,
+        "tpr_at_calibrated_threshold": 0.4186046511627907,
+        "mean_score": 0.4164260957682312
+      },
+      "deepseek:E4": {
+        "n": 86,
+        "auroc": 0.8706733369388858,
+        "tpr_at_calibrated_threshold": 0.7325581395348837,
+        "mean_score": 0.5893568298030902
+      }
+    },
+    "train_providers": [
+      "doubao",
+      "kimi",
+      "wenxin"
+    ],
+    "test_providers": [
+      "deepseek"
+    ],
+    "train_h": 243,
+    "train_e": 2916,
+    "calibration_h": 83,
+    "calibration_fpr": 0.04819277108433735,
+    "threshold": 0.44607404839212506,
+    "target_fpr": 0.05,
+    "model": "TF-IDF character 2-4 grams + balanced logistic regression",
+    "input": "title_abstract"
+  },
+  "leave_out_doubao": {
+    "test_h": 86,
+    "test_e": 344,
+    "actual_fpr": 0.10465116279069768,
+    "by_provider_level": {
+      "doubao:E1": {
+        "n": 86,
+        "auroc": 0.6014737696051919,
+        "tpr_at_calibrated_threshold": 0.16279069767441862,
+        "mean_score": 0.2764395132026716
+      },
+      "doubao:E2": {
+        "n": 86,
+        "auroc": 0.9369929691725257,
+        "tpr_at_calibrated_threshold": 0.8255813953488372,
+        "mean_score": 0.7591785214050989
+      },
+      "doubao:E3": {
+        "n": 86,
+        "auroc": 0.9003515413737155,
+        "tpr_at_calibrated_threshold": 0.6976744186046512,
+        "mean_score": 0.672812404793146
+      },
+      "doubao:E4": {
+        "n": 86,
+        "auroc": 0.9359113034072473,
+        "tpr_at_calibrated_threshold": 0.8604651162790697,
+        "mean_score": 0.7808169661226518
+      }
+    },
+    "train_providers": [
+      "deepseek",
+      "kimi",
+      "wenxin"
+    ],
+    "test_providers": [
+      "doubao"
+    ],
+    "train_h": 243,
+    "train_e": 2916,
+    "calibration_h": 83,
+    "calibration_fpr": 0.04819277108433735,
+    "threshold": 0.49083413265365294,
+    "target_fpr": 0.05,
+    "model": "TF-IDF character 2-4 grams + balanced logistic regression",
+    "input": "title_abstract"
+  },
+  "leave_out_kimi": {
+    "test_h": 86,
+    "test_e": 344,
+    "actual_fpr": 0.13953488372093023,
+    "by_provider_level": {
+      "kimi:E1": {
+        "n": 86,
+        "auroc": 0.5325175770686859,
+        "tpr_at_calibrated_threshold": 0.11627906976744186,
+        "mean_score": 0.17697816016431117
+      },
+      "kimi:E2": {
+        "n": 86,
+        "auroc": 0.9083288263926447,
+        "tpr_at_calibrated_threshold": 0.8023255813953488,
+        "mean_score": 0.7314394881657621
+      },
+      "kimi:E3": {
+        "n": 86,
+        "auroc": 0.8829096809085992,
+        "tpr_at_calibrated_threshold": 0.627906976744186,
+        "mean_score": 0.6729859161958899
+      },
+      "kimi:E4": {
+        "n": 86,
+        "auroc": 0.9153596538669551,
+        "tpr_at_calibrated_threshold": 0.7790697674418605,
+        "mean_score": 0.7636729550192605
+      }
+    },
+    "train_providers": [
+      "deepseek",
+      "doubao",
+      "wenxin"
+    ],
+    "test_providers": [
+      "kimi"
+    ],
+    "train_h": 243,
+    "train_e": 2916,
+    "calibration_h": 83,
+    "calibration_fpr": 0.04819277108433735,
+    "threshold": 0.5398248495523604,
+    "target_fpr": 0.05,
+    "model": "TF-IDF character 2-4 grams + balanced logistic regression",
+    "input": "title_abstract"
+  },
+  "leave_out_wenxin": {
+    "test_h": 86,
+    "test_e": 344,
+    "actual_fpr": 0.13953488372093023,
+    "by_provider_level": {
+      "wenxin:E1": {
+        "n": 86,
+        "auroc": 0.6174283396430502,
+        "tpr_at_calibrated_threshold": 0.20930232558139536,
+        "mean_score": 0.2962877430153757
+      },
+      "wenxin:E2": {
+        "n": 86,
+        "auroc": 0.9568685776095186,
+        "tpr_at_calibrated_threshold": 0.8953488372093024,
+        "mean_score": 0.8656856112341059
+      },
+      "wenxin:E3": {
+        "n": 86,
+        "auroc": 0.8996755002704164,
+        "tpr_at_calibrated_threshold": 0.7441860465116279,
+        "mean_score": 0.696928175356931
+      },
+      "wenxin:E4": {
+        "n": 86,
+        "auroc": 0.945646295294754,
+        "tpr_at_calibrated_threshold": 0.8837209302325582,
+        "mean_score": 0.7840599676355289
+      }
+    },
+    "train_providers": [
+      "deepseek",
+      "doubao",
+      "kimi"
+    ],
+    "test_providers": [
+      "wenxin"
+    ],
+    "train_h": 243,
+    "train_e": 2916,
+    "calibration_h": 83,
+    "calibration_fpr": 0.04819277108433735,
+    "threshold": 0.4935868254549802,
+    "target_fpr": 0.05,
+    "model": "TF-IDF character 2-4 grams + balanced logistic regression",
+    "input": "title_abstract"
+  }
+}

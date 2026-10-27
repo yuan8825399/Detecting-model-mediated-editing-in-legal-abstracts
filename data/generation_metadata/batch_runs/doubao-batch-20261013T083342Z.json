@@ -1,0 +1,16 @@
+{
+  "run_id": "doubao-batch-20261013T083342Z",
+  "provider": "doubao",
+  "model_requested": "ep-20261012224303-v4dnb",
+  "endpoint": "https://ark.cn-beijing.volces.com/api/v3/chat/completions",
+  "total_provider_tasks": 2124,
+  "pending_at_start": 1769,
+  "workers": 8,
+  "started_at_utc": "2026-10-13T08:33:42.585646+00:00",
+  "status": "interrupted",
+  "completed": 560,
+  "failed": 0,
+  "failures": [],
+  "last_flush_at_utc": "2026-10-13T09:20:00.828352+00:00",
+  "interruption_reason": "process ended before completing the queue"
+}

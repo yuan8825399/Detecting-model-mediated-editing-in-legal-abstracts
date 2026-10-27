@@ -1,0 +1,19 @@
+{
+  "dataset": "CLAW-Edit",
+  "version": "3.0",
+  "parent_version": "2.0",
+  "status": "formal_source_screened_benchmark",
+  "reviewed_csv_sha256": "ce5742be3928d0fe03e6eb4c2db3a1bb7fe9bf98ebbd959ecf8e226380aa4e09",
+  "parent_v2_benchmark_sha256": "25d66e46d7547824c4d4309aeb865500c9f1c46ab9d97505135aadf6f1b5ba33",
+  "source_of_exclusion_decisions": "research_benchmark_legal_edit_v1\\processed\\records.csv",
+  "source_of_record_text_and_evidence": "research_benchmark_legal_edit_v2\\evaluation\\benchmark_records.jsonl",
+  "manual_csv_text_overrides_used": false,
+  "human_editing_conditions": false,
+  "exclusion_unit": "source_id",
+  "accepted_missing_terminal_punctuation_count": 33,
+  "counts": {
+    "source_groups": 493,
+    "H": 493,
+    "E": 7888
+  }
+}

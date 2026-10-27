@@ -1,0 +1,44 @@
+{
+  "run_id": "wenxin-test-20261012T035733Z",
+  "provider": "wenxin",
+  "source_id": "china-law-2019-00038",
+  "group_id": "group-1af2a681d24f174d",
+  "evaluation_role": "pilot_only",
+  "source_title": "卫生健康法法典化研究",
+  "planned_tasks": [
+    "wenxin-china-law-2019-00038-E1",
+    "wenxin-china-law-2019-00038-E2",
+    "wenxin-china-law-2019-00038-E3",
+    "wenxin-china-law-2019-00038-E4"
+  ],
+  "started_at_utc": "2026-10-12T03:57:33.930012+00:00",
+  "status": "completed",
+  "completed": [
+    {
+      "record_id": "wenxin-china-law-2019-00038-E1",
+      "prompt_id": "E1",
+      "model_snapshot": "ernie-4.5-turbo-128k",
+      "raw_path": "raw\\wenxin_test\\wenxin-china-law-2019-00038-E1.json"
+    },
+    {
+      "record_id": "wenxin-china-law-2019-00038-E2",
+      "prompt_id": "E2",
+      "model_snapshot": "ernie-4.5-turbo-128k",
+      "raw_path": "raw\\wenxin_test\\wenxin-china-law-2019-00038-E2.json"
+    },
+    {
+      "record_id": "wenxin-china-law-2019-00038-E3",
+      "prompt_id": "E3",
+      "model_snapshot": "ernie-4.5-turbo-128k",
+      "raw_path": "raw\\wenxin_test\\wenxin-china-law-2019-00038-E3.json"
+    },
+    {
+      "record_id": "wenxin-china-law-2019-00038-E4",
+      "prompt_id": "E4",
+      "model_snapshot": "ernie-4.5-turbo-128k",
+      "raw_path": "raw\\wenxin_test\\wenxin-china-law-2019-00038-E4.json"
+    }
+  ],
+  "failures": [],
+  "finished_at_utc": "2026-10-12T03:58:04.882173+00:00"
+}

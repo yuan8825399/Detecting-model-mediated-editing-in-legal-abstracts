@@ -1,0 +1,21 @@
+{
+  "run_id": "doubao-batch-20261013T102912Z",
+  "provider": "doubao",
+  "model_requested": "ep-20261012224303-v4dnb",
+  "endpoint": "https://ark.cn-beijing.volces.com/api/v3/chat/completions",
+  "total_provider_tasks": 2124,
+  "pending_at_start": 1208,
+  "workers": 8,
+  "started_at_utc": "2026-10-13T10:29:12.920923+00:00",
+  "status": "blocked_auth_or_account",
+  "completed": 725,
+  "failed": 1,
+  "failures": [
+    {
+      "record_id": "doubao-china-law-2013-00099-E2",
+      "error": "HTTP 403 AccountOverdueError"
+    }
+  ],
+  "last_flush_at_utc": "2026-10-13T11:28:27.914011+00:00",
+  "finished_at_utc": "2026-10-13T11:28:27.992131+00:00"
+}

@@ -1,0 +1,391 @@
+{
+  "task": "continuous LLM intervention operation-intensity prediction",
+  "label": {
+    "name": "z",
+    "range": [
+      0.0,
+      1.0
+    ],
+    "mapping": {
+      "H": 0.0,
+      "E1": 0.25,
+      "E2": 0.5,
+      "E3": 0.75,
+      "E4": 1.0
+    },
+    "interpretation": "Predefined edit-operation intensity proxy; not a measured proportion of LLM authorship.",
+    "relationship": "E1-E4 are parallel edits from the same H source, not a chained trajectory."
+  },
+  "model": "TF-IDF character 2-4 grams plus class-balanced ridge regression",
+  "input": "abstract",
+  "split_protocol": "train fit; dev alpha selection; calibration isotonic mapping; test final evaluation; source groups are disjoint.",
+  "source_groups_by_split": {
+    "train": 243,
+    "dev": 81,
+    "calibration": 83,
+    "test": 86
+  },
+  "records_by_split": {
+    "train": 4131,
+    "dev": 1377,
+    "calibration": 1411,
+    "test": 1462
+  },
+  "selected_alpha": 1.0,
+  "dev_by_alpha_raw_clipped": {
+    "0.1": {
+      "n": 1377,
+      "mae": 0.233924,
+      "rmse": 0.288578,
+      "bias": 0.108468,
+      "pearson_r": 0.524679,
+      "spearman_rho": 0.497707
+    },
+    "1.0": {
+      "n": 1377,
+      "mae": 0.22483,
+      "rmse": 0.261602,
+      "bias": 0.068268,
+      "pearson_r": 0.581312,
+      "spearman_rho": 0.567378
+    },
+    "10.0": {
+      "n": 1377,
+      "mae": 0.247902,
+      "rmse": 0.284839,
+      "bias": -0.035604,
+      "pearson_r": 0.553358,
+      "spearman_rho": 0.550055
+    }
+  },
+  "calibration_raw_clipped": {
+    "n": 1411,
+    "mae": 0.217334,
+    "rmse": 0.252991,
+    "bias": 0.059996,
+    "pearson_r": 0.609998,
+    "spearman_rho": 0.605372
+  },
+  "calibration_isotonic": {
+    "n": 1411,
+    "mae": 0.19525,
+    "rmse": 0.241194,
+    "bias": -0.041469,
+    "pearson_r": 0.650051,
+    "spearman_rho": 0.621433
+  },
+  "test_raw_clipped": {
+    "n": 1462,
+    "mae": 0.224525,
+    "rmse": 0.26319,
+    "bias": 0.063,
+    "pearson_r": 0.562301,
+    "spearman_rho": 0.558113
+  },
+  "test_isotonic_calibrated": {
+    "n": 1462,
+    "mae": 0.206685,
+    "rmse": 0.258032,
+    "bias": -0.034484,
+    "pearson_r": 0.586338,
+    "spearman_rho": 0.557207
+  },
+  "test_isotonic_calibrated_source_bootstrap": {
+    "bias_95ci": [
+      -0.057111,
+      -0.011491
+    ],
+    "mae_95ci": [
+      0.197155,
+      0.216854
+    ],
+    "pearson_r_95ci": [
+      0.539588,
+      0.630591
+    ],
+    "rmse_95ci": [
+      0.245373,
+      0.271317
+    ],
+    "spearman_rho_95ci": [
+      0.513863,
+      0.598472
+    ]
+  },
+  "test_by_provider_level_raw_clipped": {
+    "H": {
+      "n": 86,
+      "mae": 0.450762,
+      "rmse": 0.4834,
+      "bias": 0.450762,
+      "pearson_r": null,
+      "spearman_rho": null
+    },
+    "deepseek:E1": {
+      "n": 86,
+      "mae": 0.26441,
+      "rmse": 0.288382,
+      "bias": 0.26415,
+      "pearson_r": null,
+      "spearman_rho": null
+    },
+    "deepseek:E2": {
+      "n": 86,
+      "mae": 0.140294,
+      "rmse": 0.166108,
+      "bias": 0.116635,
+      "pearson_r": null,
+      "spearman_rho": null
+    },
+    "deepseek:E3": {
+      "n": 86,
+      "mae": 0.140133,
+      "rmse": 0.168076,
+      "bias": -0.132721,
+      "pearson_r": null,
+      "spearman_rho": null
+    },
+    "deepseek:E4": {
+      "n": 86,
+      "mae": 0.319004,
+      "rmse": 0.337862,
+      "bias": -0.319004,
+      "pearson_r": null,
+      "spearman_rho": null
+    },
+    "doubao:E1": {
+      "n": 86,
+      "mae": 0.263063,
+      "rmse": 0.287291,
+      "bias": 0.262803,
+      "pearson_r": null,
+      "spearman_rho": null
+    },
+    "doubao:E2": {
+      "n": 86,
+      "mae": 0.239673,
+      "rmse": 0.260149,
+      "bias": 0.238543,
+      "pearson_r": null,
+      "spearman_rho": null
+    },
+    "doubao:E3": {
+      "n": 86,
+      "mae": 0.093572,
+      "rmse": 0.114099,
+      "bias": -0.031543,
+      "pearson_r": null,
+      "spearman_rho": null
+    },
+    "doubao:E4": {
+      "n": 86,
+      "mae": 0.23845,
+      "rmse": 0.260306,
+      "bias": -0.23845,
+      "pearson_r": null,
+      "spearman_rho": null
+    },
+    "kimi:E1": {
+      "n": 86,
+      "mae": 0.24048,
+      "rmse": 0.266478,
+      "bias": 0.237681,
+      "pearson_r": null,
+      "spearman_rho": null
+    },
+    "kimi:E2": {
+      "n": 86,
+      "mae": 0.234649,
+      "rmse": 0.254567,
+      "bias": 0.233606,
+      "pearson_r": null,
+      "spearman_rho": null
+    },
+    "kimi:E3": {
+      "n": 86,
+      "mae": 0.093153,
+      "rmse": 0.11455,
+      "bias": -0.024645,
+      "pearson_r": null,
+      "spearman_rho": null
+    },
+    "kimi:E4": {
+      "n": 86,
+      "mae": 0.233192,
+      "rmse": 0.254626,
+      "bias": -0.233192,
+      "pearson_r": null,
+      "spearman_rho": null
+    },
+    "wenxin:E1": {
+      "n": 86,
+      "mae": 0.268831,
+      "rmse": 0.292811,
+      "bias": 0.268831,
+      "pearson_r": null,
+      "spearman_rho": null
+    },
+    "wenxin:E2": {
+      "n": 86,
+      "mae": 0.256079,
+      "rmse": 0.277657,
+      "bias": 0.256079,
+      "pearson_r": null,
+      "spearman_rho": null
+    },
+    "wenxin:E3": {
+      "n": 86,
+      "mae": 0.09894,
+      "rmse": 0.12451,
+      "bias": -0.036302,
+      "pearson_r": null,
+      "spearman_rho": null
+    },
+    "wenxin:E4": {
+      "n": 86,
+      "mae": 0.242233,
+      "rmse": 0.26009,
+      "bias": -0.242233,
+      "pearson_r": null,
+      "spearman_rho": null
+    }
+  },
+  "test_by_provider_level_isotonic_calibrated": {
+    "H": {
+      "n": 86,
+      "mae": 0.274374,
+      "rmse": 0.337919,
+      "bias": 0.274374,
+      "pearson_r": null,
+      "spearman_rho": null
+    },
+    "deepseek:E1": {
+      "n": 86,
+      "mae": 0.146723,
+      "rmse": 0.199414,
+      "bias": 0.080006,
+      "pearson_r": null,
+      "spearman_rho": null
+    },
+    "deepseek:E2": {
+      "n": 86,
+      "mae": 0.189814,
+      "rmse": 0.210314,
+      "bias": 0.002633,
+      "pearson_r": null,
+      "spearman_rho": null
+    },
+    "deepseek:E3": {
+      "n": 86,
+      "mae": 0.245387,
+      "rmse": 0.312931,
+      "bias": -0.241194,
+      "pearson_r": null,
+      "spearman_rho": null
+    },
+    "deepseek:E4": {
+      "n": 86,
+      "mae": 0.378133,
+      "rmse": 0.413983,
+      "bias": -0.378133,
+      "pearson_r": null,
+      "spearman_rho": null
+    },
+    "doubao:E1": {
+      "n": 86,
+      "mae": 0.146884,
+      "rmse": 0.200505,
+      "bias": 0.079368,
+      "pearson_r": null,
+      "spearman_rho": null
+    },
+    "doubao:E2": {
+      "n": 86,
+      "mae": 0.221623,
+      "rmse": 0.237021,
+      "bias": 0.193883,
+      "pearson_r": null,
+      "spearman_rho": null
+    },
+    "doubao:E3": {
+      "n": 86,
+      "mae": 0.114101,
+      "rmse": 0.17959,
+      "bias": -0.089916,
+      "pearson_r": null,
+      "spearman_rho": null
+    },
+    "doubao:E4": {
+      "n": 86,
+      "mae": 0.285253,
+      "rmse": 0.313623,
+      "bias": -0.285253,
+      "pearson_r": null,
+      "spearman_rho": null
+    },
+    "kimi:E1": {
+      "n": 86,
+      "mae": 0.133962,
+      "rmse": 0.182264,
+      "bias": 0.041716,
+      "pearson_r": null,
+      "spearman_rho": null
+    },
+    "kimi:E2": {
+      "n": 86,
+      "mae": 0.215622,
+      "rmse": 0.229641,
+      "bias": 0.189837,
+      "pearson_r": null,
+      "spearman_rho": null
+    },
+    "kimi:E3": {
+      "n": 86,
+      "mae": 0.105511,
+      "rmse": 0.167185,
+      "bias": -0.077564,
+      "pearson_r": null,
+      "spearman_rho": null
+    },
+    "kimi:E4": {
+      "n": 86,
+      "mae": 0.279188,
+      "rmse": 0.300697,
+      "bias": -0.279188,
+      "pearson_r": null,
+      "spearman_rho": null
+    },
+    "wenxin:E1": {
+      "n": 86,
+      "mae": 0.142554,
+      "rmse": 0.199415,
+      "bias": 0.079848,
+      "pearson_r": null,
+      "spearman_rho": null
+    },
+    "wenxin:E2": {
+      "n": 86,
+      "mae": 0.230812,
+      "rmse": 0.241808,
+      "bias": 0.206137,
+      "pearson_r": null,
+      "spearman_rho": null
+    },
+    "wenxin:E3": {
+      "n": 86,
+      "mae": 0.125002,
+      "rmse": 0.208145,
+      "bias": -0.104086,
+      "pearson_r": null,
+      "spearman_rho": null
+    },
+    "wenxin:E4": {
+      "n": 86,
+      "mae": 0.278699,
+      "rmse": 0.302485,
+      "bias": -0.278699,
+      "pearson_r": null,
+      "spearman_rho": null
+    }
+  }
+}

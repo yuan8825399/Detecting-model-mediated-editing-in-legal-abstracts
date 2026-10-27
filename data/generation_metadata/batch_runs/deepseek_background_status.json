@@ -1,0 +1,17 @@
+{
+  "status": "completed",
+  "log_path": "E:\\xhy-codex\\AI-detect\\research_benchmark_legal_edit_v1\\evaluation\\deepseek_background.log",
+  "reason": "",
+  "updated_at_utc": "2026-10-15T07:29:15.090246+00:00",
+  "pid": 10584,
+  "started_at_utc": "2026-10-15T06:36:45.192534+00:00",
+  "collection_exit_code": 1,
+  "accepted": 2124,
+  "expected": 2124,
+  "quality_counts": {
+    "accepted": 2124
+  },
+  "processing_exit_code": 0,
+  "validation_exit_code": 0,
+  "finished_at_utc": "2026-10-15T07:29:15.084143+00:00"
+}
